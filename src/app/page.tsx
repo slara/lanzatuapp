@@ -213,18 +213,25 @@ function Process() {
 			number: '01',
 			title: 'Hablamos de tu negocio, no de tecnología',
 			description:
-				'En 30 minutos nos cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga técnica.',
+				'En 30 minutos nos cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar.',
 			icon: Calendar,
 		},
 		{
 			number: '02',
+			title: 'Creamos tu documento de especificación',
+			description:
+				'En 2 días generamos un design document colaborativo: la especificación detallada de tu producto. Es el "prompt" que guía todo el desarrollo.',
+			icon: FileText,
+		},
+		{
+			number: '03',
 			title: 'Construimos mientras tú vendes',
 			description:
 				'Durante 3 semanas desarrollamos tu producto. Cada semana te mostramos el avance. Tú te enfocas en conseguir tus primeros clientes.',
 			icon: Code,
 		},
 		{
-			number: '03',
+			number: '04',
 			title: 'Lanzamos y te entregamos todo',
 			description:
 				'Tu producto online, funcionando, con tu dominio. El código es 100% tuyo. Cuando contrates un CTO, puede continuar sin problemas.',
@@ -240,10 +247,10 @@ function Process() {
 						Así de simple
 					</p>
 					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						De idea a producto en 3 pasos
+						De idea a producto en 4 pasos
 					</h2>
 				</div>
-				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-3">
+				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-4">
 					{steps.map((step) => (
 						<div key={step.number} className="relative rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
 							<div className="flex items-center gap-4">
