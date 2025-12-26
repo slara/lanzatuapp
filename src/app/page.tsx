@@ -441,7 +441,7 @@ function Pricing() {
 						Elige el plan que se ajusta a tu idea
 					</h2>
 					<p className="mt-4 text-lg text-gray-600">
-						Precio fijo. Sin sorpresas. Pago en 3 partes.
+						Precio fijo. Sin sorpresas. Pago en 2 partes.
 					</p>
 				</div>
 				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 lg:grid-cols-3">
@@ -537,7 +537,7 @@ function FAQ() {
 		{
 			question: '¿Cómo sé que van a entregar?',
 			answer:
-				'Pagas en 3 partes: 40% al inicio, 30% a mitad del proyecto, 30% a la entrega. Cada semana te mostramos el avance. Si en cualquier momento no estás conforme, lo hablamos y ajustamos. Tu dinero está protegido porque solo pagas por avances reales.',
+				'Pagas en 2 partes: 50% al inicio, 50% a la entrega. Cada semana te mostramos el avance. Si en cualquier momento no estás conforme, lo hablamos y ajustamos. Tu dinero está protegido porque solo pagas por avances reales.',
 		},
 		{
 			question: '¿Y si necesito cambios después?',
