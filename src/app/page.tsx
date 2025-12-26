@@ -535,11 +535,6 @@ function FAQ() {
 				'Sí. De hecho, es exactamente para ti. En nuestra llamada hablamos de tu negocio: qué problema resuelves, quiénes son tus clientes, cómo quieres ganar dinero. Nosotros nos encargamos de traducir eso a tecnología. Nunca vas a escuchar jerga técnica.',
 		},
 		{
-			question: '¿Por qué 3 semanas y no 3 días?',
-			answer:
-				'Podríamos entregar algo en 3 días, pero sería código que tu futuro CTO tiraría a la basura. 3 semanas nos permiten construir algo sólido, con buenas bases, que puede crecer contigo. Es la diferencia entre una casa prefabricada y una con cimientos reales.',
-		},
-		{
 			question: '¿Cómo sé que van a entregar?',
 			answer:
 				'Pagas en 3 partes: 40% al inicio, 30% a mitad del proyecto, 30% a la entrega. Cada semana te mostramos el avance. Si en cualquier momento no estás conforme, lo hablamos y ajustamos. Tu dinero está protegido porque solo pagas por avances reales.',
