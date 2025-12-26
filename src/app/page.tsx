@@ -5,6 +5,7 @@ import { LanzatuFooter } from '@/components/lanzatu-footer'
 import { LanzatuNavbar } from '@/components/lanzatu-navbar'
 import {
 	ArrowRight,
+	Bot,
 	Calendar,
 	Check,
 	Cloud,
@@ -13,7 +14,9 @@ import {
 	Globe,
 	LayoutDashboard,
 	Lock,
+	MessageCircle,
 	Shield,
+	Smartphone,
 	Users,
 	Zap,
 } from 'lucide-react'
@@ -277,19 +280,37 @@ function Deliverables() {
 	)
 }
 
+interface PlanFeature {
+	text: string
+	icon: React.ComponentType<{ className?: string }>
+	highlight?: boolean
+}
+
+interface Plan {
+	name: string
+	description: string
+	price: string
+	includesPrevious: boolean
+	previousPlan?: string
+	features: PlanFeature[]
+	cta: string
+	highlighted: boolean
+}
+
 function Pricing() {
-	const plans = [
+	const plans: Plan[] = [
 		{
 			name: 'Starter',
 			description: 'Para validar tu idea rápido',
 			price: '$1,200',
+			includesPrevious: false,
 			features: [
-				'Llamada de descubrimiento (30 min)',
-				'2-3 funcionalidades core',
-				'Diseño limpio y funcional',
-				'Tu producto online',
-				'El código es 100% tuyo',
-				'1 ronda de ajustes',
+				{ text: 'Llamada de descubrimiento (30 min)', icon: Calendar },
+				{ text: '2-3 funcionalidades core', icon: Code },
+				{ text: 'Diseño limpio y funcional', icon: Globe },
+				{ text: 'Tu producto online', icon: Cloud },
+				{ text: 'El código es 100% tuyo', icon: Lock },
+				{ text: '1 ronda de ajustes', icon: Check },
 			],
 			cta: 'Empezar simple',
 			highlighted: false,
@@ -298,33 +319,34 @@ function Pricing() {
 			name: 'Profesional',
 			description: 'El más popular para lanzar',
 			price: '$2,000',
+			includesPrevious: true,
+			previousPlan: 'Starter',
 			features: [
-				'Llamada de descubrimiento (30 min)',
-				'4-5 funcionalidades core',
-				'Diseño profesional y pulido',
-				'Tu producto online con tu dominio',
-				'El código es 100% tuyo',
-				'Documentación para tu equipo',
-				'Updates semanales',
-				'2 rondas de ajustes',
+				{ text: '4-5 funcionalidades core', icon: Code },
+				{ text: 'Diseño profesional y pulido', icon: Globe },
+				{ text: 'Tu dominio personalizado', icon: Cloud },
+				{ text: 'Documentación para tu equipo', icon: FileText },
+				{ text: 'Updates semanales', icon: Zap },
+				{ text: '2 rondas de ajustes', icon: Check },
+				{ text: 'Integración con WhatsApp Business', icon: MessageCircle, highlight: true },
 			],
 			cta: 'Elegir Profesional',
 			highlighted: true,
 		},
 		{
-			name: 'Completo',
-			description: 'Para productos más ambiciosos',
+			name: 'Enterprise',
+			description: 'Para escalar sin límites',
 			price: '$3,500',
+			includesPrevious: true,
+			previousPlan: 'Profesional',
 			features: [
-				'Llamada de descubrimiento (60 min)',
-				'6-8 funcionalidades core',
-				'Diseño premium personalizado',
-				'Tu producto online con tu dominio',
-				'El código es 100% tuyo',
-				'Documentación completa',
-				'Updates semanales + demo',
-				'3 rondas de ajustes',
-				'1 mes de soporte incluido',
+				{ text: 'Llamada de descubrimiento extendida (60 min)', icon: Calendar },
+				{ text: '6-8 funcionalidades core', icon: Code },
+				{ text: 'Diseño premium personalizado', icon: Globe },
+				{ text: '3 rondas de ajustes', icon: Check },
+				{ text: '1 mes de soporte incluido', icon: Shield },
+				{ text: 'Aplicación móvil (iOS y Android)', icon: Smartphone, highlight: true },
+				{ text: 'Workflows de AI integrados', icon: Bot, highlight: true },
 			],
 			cta: 'Ir por todo',
 			highlighted: false,
@@ -371,14 +393,26 @@ function Pricing() {
 									<span className="text-base text-gray-500">USD</span>
 								</div>
 							</div>
-							<ul className="mt-8 space-y-3">
-								{plan.features.map((feature) => (
-									<li key={feature} className="flex items-start gap-3">
-										<Check className={`mt-0.5 size-4 shrink-0 ${plan.highlighted ? 'text-emerald-600' : 'text-gray-400'}`} />
-										<span className="text-sm text-gray-600">{feature}</span>
-									</li>
-								))}
-							</ul>
+							<div className="mt-8 space-y-3">
+								{plan.includesPrevious && plan.previousPlan && (
+									<div className="mb-4 rounded-lg bg-emerald-50 px-3 py-2 text-center">
+										<span className="text-sm font-medium text-emerald-700">
+											✓ Todo lo del plan {plan.previousPlan}
+										</span>
+									</div>
+								)}
+								<ul className="space-y-3">
+									{plan.features.map((feature) => (
+										<li key={feature.text} className="flex items-start gap-3">
+											<feature.icon className={`mt-0.5 size-4 shrink-0 ${feature.highlight ? 'text-emerald-600' : plan.highlighted ? 'text-emerald-600' : 'text-gray-400'}`} />
+											<span className={`text-sm ${feature.highlight ? 'font-medium text-emerald-700' : 'text-gray-600'}`}>
+												{feature.text}
+												{feature.highlight && <span className="ml-1 text-xs text-emerald-500">✨</span>}
+											</span>
+										</li>
+									))}
+								</ul>
+							</div>
 							<div className="mt-8">
 								<Link
 									href="#contacto"
