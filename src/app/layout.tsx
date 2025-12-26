@@ -1,5 +1,3 @@
-import { SanityLive } from '@/sanity/live'
-import { revalidateSyncTags } from '@/sanity/revalidateSyncTags'
 import '@/styles/tailwind.css'
 import type { Metadata } from 'next'
 
@@ -25,10 +23,7 @@ export default function RootLayout({
           href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
         />
       </head>
-      <body className="text-gray-950 antialiased">
-        {children}
-        <SanityLive revalidateSyncTags={revalidateSyncTags} />
-      </body>
+      <body className="text-gray-950 antialiased">{children}</body>
     </html>
   )
 }
