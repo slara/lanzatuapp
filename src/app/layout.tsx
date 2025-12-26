@@ -4,10 +4,10 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: {
     template: '%s - lanzatu.app',
-    default: 'lanzatu.app - Tu idea, en produccion en 2-3 semanas',
+    default: 'lanzatu.app - Tu idea, en producción en 2-3 semanas',
   },
   description:
-    'Construimos tu MVP con codigo profesional en 2-3 semanas. Next.js, FastAPI, PostgreSQL. El codigo es 100% tuyo.',
+    'Construimos tu MVP con código profesional en 2-3 semanas. Next.js, FastAPI, PostgreSQL. El código es 100% tuyo.',
 }
 
 export default function RootLayout({

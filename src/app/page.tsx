@@ -23,7 +23,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
 	title: 'lanzatu.app - De idea a producto en 3 semanas',
 	description:
-		'Tienes la idea. Nosotros la construimos. MVP profesional en 3 semanas para fundadores no tecnicos. Sin agencias. Sin freelancers. Sin dolores de cabeza.',
+		'Tienes la idea. Nosotros la construimos. MVP profesional en 3 semanas para fundadores no técnicos. Sin agencias. Sin freelancers. Sin dolores de cabeza.',
 }
 
 function Hero() {
@@ -33,7 +33,7 @@ function Hero() {
 			<Container>
 				<div className="relative z-10 max-w-2xl pb-20 pt-20 sm:pb-32 sm:pt-28 lg:pt-36">
 					<p className="text-sm font-medium text-emerald-600">
-						Para fundadores sin equipo tecnico
+						Para fundadores sin equipo técnico
 					</p>
 					<h1 className="mt-4 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
 						Deja de buscar desarrolladores.{' '}
@@ -54,11 +54,11 @@ function Hero() {
 							href="#proceso"
 							className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50"
 						>
-							Ver como funciona
+							Ver cómo funciona
 						</Link>
 					</div>
 					<p className="mt-6 text-sm text-gray-500">
-						30 minutos. Sin compromiso. Sin jerga tecnica.
+						30 minutos. Sin compromiso. Sin jerga técnica.
 					</p>
 				</div>
 			</Container>
@@ -77,7 +77,7 @@ function TrustBadges() {
 					</div>
 					<div className="flex items-center gap-2">
 						<Lock className="size-4 text-emerald-500" />
-						<span>El codigo es tuyo</span>
+						<span>El código es tuyo</span>
 					</div>
 					<div className="flex items-center gap-2">
 						<Shield className="size-4 text-emerald-500" />
@@ -99,7 +99,7 @@ function Problem() {
 			<Container>
 				<div className="mx-auto max-w-3xl text-center">
 					<h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						Construir tu primer producto no deberia ser tan dificil
+						Construir tu primer producto no debería ser tan difícil
 					</h2>
 					<div className="mt-12 grid gap-8 text-left sm:grid-cols-3">
 						<div className="rounded-xl border border-red-100 bg-red-50/50 p-6">
@@ -111,13 +111,13 @@ function Problem() {
 						<div className="rounded-xl border border-red-100 bg-red-50/50 p-6">
 							<p className="font-medium text-gray-900">Buscar freelancers</p>
 							<p className="mt-2 text-sm text-gray-600">
-								Semanas buscando, comunicacion dificil, y nunca sabes si el codigo sirve.
+								Semanas buscando, comunicación difícil, y nunca sabes si el código sirve.
 							</p>
 						</div>
 						<div className="rounded-xl border border-red-100 bg-red-50/50 p-6">
 							<p className="font-medium text-gray-900">Aprender a programar</p>
 							<p className="mt-2 text-sm text-gray-600">
-								6-12 meses solo para lo basico. Tu competencia ya estara vendiendo.
+								6-12 meses solo para lo básico. Tu competencia ya estará vendiendo.
 							</p>
 						</div>
 					</div>
@@ -131,23 +131,23 @@ function Process() {
 	const steps = [
 		{
 			number: '01',
-			title: 'Hablamos de tu negocio, no de tecnologia',
+			title: 'Hablamos de tu negocio, no de tecnología',
 			description:
-				'En 30 minutos me cuentas que problema resuelves y para quien. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga tecnica.',
+				'En 30 minutos me cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga técnica.',
 			icon: Calendar,
 		},
 		{
 			number: '02',
-			title: 'Construimos mientras tu vendes',
+			title: 'Construimos mientras tú vendes',
 			description:
-				'Durante 3 semanas desarrollo tu producto. Cada semana te muestro el avance. Tu te enfocas en conseguir tus primeros clientes.',
+				'Durante 3 semanas desarrollo tu producto. Cada semana te muestro el avance. Tú te enfocas en conseguir tus primeros clientes.',
 			icon: Code,
 		},
 		{
 			number: '03',
 			title: 'Lanzamos y te entrego todo',
 			description:
-				'Tu producto online, funcionando, con tu dominio. El codigo es 100% tuyo. Cuando contrates un CTO, puede continuar sin problemas.',
+				'Tu producto online, funcionando, con tu dominio. El código es 100% tuyo. Cuando contrates un CTO, puede continuar sin problemas.',
 			icon: Cloud,
 		},
 	]
@@ -157,7 +157,7 @@ function Process() {
 			<Container>
 				<div className="mx-auto max-w-2xl text-center">
 					<p className="text-sm font-medium text-emerald-600">
-						Asi de simple
+						Así de simple
 					</p>
 					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
 						De idea a producto en 3 pasos
@@ -193,25 +193,25 @@ function Deliverables() {
 		{
 			title: 'Sistema de usuarios listo',
 			description:
-				'Tus clientes pueden registrarse con Google, email o redes sociales. Listo para manejar multiples empresas si lo necesitas.',
+				'Tus clientes pueden registrarse con Google, email o redes sociales. Listo para manejar múltiples empresas si lo necesitas.',
 			icon: Users,
 		},
 		{
-			title: 'Pagina de inicio profesional',
+			title: 'Página de inicio profesional',
 			description:
-				'Landing page lista para convertir visitantes en clientes. Facil de editar el texto cuando quieras.',
+				'Landing page lista para convertir visitantes en clientes. Fácil de editar el texto cuando quieras.',
 			icon: Globe,
 		},
 		{
-			title: 'Panel de administracion',
+			title: 'Panel de administración',
 			description:
-				'Dashboard donde ves todo: usuarios, datos, metricas. Con tablas, filtros y formularios listos.',
+				'Dashboard donde ves todo: usuarios, datos, métricas. Con tablas, filtros y formularios listos.',
 			icon: LayoutDashboard,
 		},
 		{
-			title: 'Tu informacion segura',
+			title: 'Tu información segura',
 			description:
-				'Base de datos profesional. Tu informacion organizada, respaldada y lista para crecer.',
+				'Base de datos profesional. Tu información organizada, respaldada y lista para crecer.',
 			icon: Shield,
 		},
 		{
@@ -223,19 +223,19 @@ function Deliverables() {
 		{
 			title: 'Online con tu dominio',
 			description:
-				'tuapp.com funcionando. Ambiente de pruebas y produccion. Certificado de seguridad incluido.',
+				'tuapp.com funcionando. Ambiente de pruebas y producción. Certificado de seguridad incluido.',
 			icon: Cloud,
 		},
 		{
-			title: 'El codigo es tuyo',
+			title: 'El código es tuyo',
 			description:
 				'Repositorio completo en GitHub. Sin dependencias raras. Tu futuro CTO puede continuar sin problemas.',
 			icon: Lock,
 		},
 		{
-			title: 'Documentacion completa',
+			title: 'Documentación completa',
 			description:
-				'Guia de arquitectura, como funciona cada parte, y manual de despliegue. Tu equipo futuro te lo agradecera.',
+				'Guía de arquitectura, cómo funciona cada parte, y manual de despliegue. Tu equipo futuro te lo agradecerá.',
 			icon: FileText,
 		},
 	]
@@ -245,13 +245,13 @@ function Deliverables() {
 			<Container>
 				<div className="mx-auto max-w-2xl text-center">
 					<p className="text-sm font-medium text-emerald-600">
-						Que incluye cada MVP
+						Qué incluye cada MVP
 					</p>
 					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
 						Todo lo que necesitas para lanzar
 					</h2>
 					<p className="mt-4 text-lg text-gray-600">
-						No empezamos de cero. Usamos un kit base probado que acelera el desarrollo.
+						No empezamos de cero. Hemos desarrollado un kit moderno, con todo lo necesario.
 					</p>
 				</div>
 				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -278,15 +278,57 @@ function Deliverables() {
 }
 
 function Pricing() {
-	const included = [
-		'Llamada de descubrimiento (30 min)',
-		'3-5 funcionalidades core de tu producto',
-		'Diseño limpio y profesional',
-		'Tu producto online con tu dominio',
-		'El codigo es 100% tuyo',
-		'Documentacion para tu futuro equipo',
-		'Updates semanales del progreso',
-		'2 rondas de ajustes incluidas',
+	const plans = [
+		{
+			name: 'Starter',
+			description: 'Para validar tu idea rápido',
+			price: '$1,200',
+			features: [
+				'Llamada de descubrimiento (30 min)',
+				'2-3 funcionalidades core',
+				'Diseño limpio y funcional',
+				'Tu producto online',
+				'El código es 100% tuyo',
+				'1 ronda de ajustes',
+			],
+			cta: 'Empezar simple',
+			highlighted: false,
+		},
+		{
+			name: 'Profesional',
+			description: 'El más popular para lanzar',
+			price: '$2,000',
+			features: [
+				'Llamada de descubrimiento (30 min)',
+				'4-5 funcionalidades core',
+				'Diseño profesional y pulido',
+				'Tu producto online con tu dominio',
+				'El código es 100% tuyo',
+				'Documentación para tu equipo',
+				'Updates semanales',
+				'2 rondas de ajustes',
+			],
+			cta: 'Elegir Profesional',
+			highlighted: true,
+		},
+		{
+			name: 'Completo',
+			description: 'Para productos más ambiciosos',
+			price: '$3,500',
+			features: [
+				'Llamada de descubrimiento (60 min)',
+				'6-8 funcionalidades core',
+				'Diseño premium personalizado',
+				'Tu producto online con tu dominio',
+				'El código es 100% tuyo',
+				'Documentación completa',
+				'Updates semanales + demo',
+				'3 rondas de ajustes',
+				'1 mes de soporte incluido',
+			],
+			cta: 'Ir por todo',
+			highlighted: false,
+		},
 	]
 
 	return (
@@ -294,54 +336,66 @@ function Pricing() {
 			<Container>
 				<div className="mx-auto max-w-2xl text-center">
 					<p className="text-sm font-medium text-emerald-600">
-						Inversion clara
+						Inversión clara
 					</p>
 					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						Sabes exactamente cuanto pagas
+						Elige el plan que se ajusta a tu idea
 					</h2>
 					<p className="mt-4 text-lg text-gray-600">
-						Sin costos ocultos. Sin sorpresas. Sin extras.
+						Precio fijo. Sin sorpresas. Pago en 3 partes.
 					</p>
 				</div>
-				<div className="mx-auto mt-16 max-w-lg">
-					<div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-						<div className="text-center">
-							<p className="text-sm font-medium text-gray-500">Tu MVP completo</p>
-							<div className="mt-4 flex items-baseline justify-center gap-2">
-								<span className="text-5xl font-semibold tracking-tight text-gray-900">
-									$1,500 - $2,000
-								</span>
-								<span className="text-lg text-gray-500">USD</span>
+				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 lg:grid-cols-3">
+					{plans.map((plan) => (
+						<div
+							key={plan.name}
+							className={`relative rounded-2xl p-8 ${plan.highlighted
+								? 'border-2 border-emerald-500 bg-white shadow-lg'
+								: 'border border-gray-200 bg-white shadow-sm'
+								}`}
+						>
+							{plan.highlighted && (
+								<div className="absolute -top-4 left-1/2 -translate-x-1/2">
+									<span className="rounded-full bg-emerald-500 px-4 py-1 text-sm font-medium text-white">
+										Recomendado
+									</span>
+								</div>
+							)}
+							<div className="text-center">
+								<p className="text-lg font-semibold text-gray-900">{plan.name}</p>
+								<p className="mt-1 text-sm text-gray-500">{plan.description}</p>
+								<div className="mt-4 flex items-baseline justify-center gap-1">
+									<span className="text-4xl font-semibold tracking-tight text-gray-900">
+										{plan.price}
+									</span>
+									<span className="text-base text-gray-500">USD</span>
+								</div>
 							</div>
-							<p className="mt-2 text-sm text-gray-600">Pago en 3 partes. Precio fijo.</p>
-						</div>
-						<div className="mt-8 border-t border-gray-100 pt-8">
-							<p className="text-sm font-medium text-gray-900">
-								Incluye:
-							</p>
-							<ul className="mt-4 space-y-3">
-								{included.map((item) => (
-									<li key={item} className="flex items-start gap-3">
-										<Check className="mt-0.5 size-4 shrink-0 text-emerald-600" />
-										<span className="text-sm text-gray-600">{item}</span>
+							<ul className="mt-8 space-y-3">
+								{plan.features.map((feature) => (
+									<li key={feature} className="flex items-start gap-3">
+										<Check className={`mt-0.5 size-4 shrink-0 ${plan.highlighted ? 'text-emerald-600' : 'text-gray-400'}`} />
+										<span className="text-sm text-gray-600">{feature}</span>
 									</li>
 								))}
 							</ul>
+							<div className="mt-8">
+								<Link
+									href="#contacto"
+									className={`flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-medium transition-colors ${plan.highlighted
+										? 'bg-emerald-500 text-white hover:bg-emerald-600'
+										: 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+										}`}
+								>
+									{plan.cta}
+									<ArrowRight className="size-4" />
+								</Link>
+							</div>
 						</div>
-						<div className="mt-8">
-							<Link
-								href="#contacto"
-								className="flex w-full items-center justify-center gap-2 rounded-full bg-gray-900 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-gray-800"
-							>
-								Empezar mi proyecto
-								<ArrowRight className="size-4" />
-							</Link>
-						</div>
-						<p className="mt-4 text-center text-xs text-gray-500">
-							El precio exacto lo definimos en la llamada, segun la complejidad de tu idea.
-						</p>
-					</div>
-					<div className="mt-8 rounded-xl border border-gray-200 bg-white p-6">
+					))}
+				</div>
+				<div className="mx-auto mt-12 max-w-2xl">
+					<div className="rounded-xl border border-gray-200 bg-white p-6">
 						<div className="flex items-start gap-4">
 							<div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-gray-100">
 								<Shield className="size-5 text-gray-600" />
@@ -351,7 +405,7 @@ function Pricing() {
 									Soporte continuo (opcional)
 								</p>
 								<p className="mt-1 text-sm text-gray-600">
-									$200-300 USD/mes. Me encargo del hosting, monitoreo y pequeños ajustes. Tu solo vendes.
+									$200-300 USD/mes. Me encargo del hosting, monitoreo y pequeños ajustes. Tú solo vendes.
 								</p>
 							</div>
 						</div>
@@ -365,34 +419,34 @@ function Pricing() {
 function FAQ() {
 	const faqs = [
 		{
-			question: 'No se nada de tecnologia. ¿Esto es para mi?',
+			question: 'No sé nada de tecnología. ¿Esto es para mí?',
 			answer:
-				'Si. De hecho, es exactamente para ti. En nuestra llamada hablamos de tu negocio: que problema resuelves, quienes son tus clientes, como quieres ganar dinero. Yo me encargo de traducir eso a tecnologia. Nunca vas a escuchar jerga tecnica.',
+				'Sí. De hecho, es exactamente para ti. En nuestra llamada hablamos de tu negocio: qué problema resuelves, quiénes son tus clientes, cómo quieres ganar dinero. Yo me encargo de traducir eso a tecnología. Nunca vas a escuchar jerga técnica.',
 		},
 		{
-			question: '¿Por que 3 semanas y no 3 dias?',
+			question: '¿Por qué 3 semanas y no 3 días?',
 			answer:
-				'Podria entregar algo en 3 dias, pero seria codigo que tu futuro CTO tiraria a la basura. 3 semanas me permiten construir algo solido, con buenas bases, que puede crecer contigo. Es la diferencia entre una casa prefabricada y una con cimientos reales.',
+				'Podría entregar algo en 3 días, pero sería código que tu futuro CTO tiraría a la basura. 3 semanas me permiten construir algo sólido, con buenas bases, que puede crecer contigo. Es la diferencia entre una casa prefabricada y una con cimientos reales.',
 		},
 		{
-			question: '¿Como se que vas a entregar?',
+			question: '¿Cómo sé que vas a entregar?',
 			answer:
-				'Pagas en 3 partes: 40% al inicio, 30% a mitad del proyecto, 30% a la entrega. Cada semana te muestro el avance. Si en cualquier momento no estas conforme, lo hablamos y ajustamos. Tu dinero esta protegido porque solo pagas por avances reales.',
+				'Pagas en 3 partes: 40% al inicio, 30% a mitad del proyecto, 30% a la entrega. Cada semana te muestro el avance. Si en cualquier momento no estás conforme, lo hablamos y ajustamos. Tu dinero está protegido porque solo pagas por avances reales.',
 		},
 		{
-			question: '¿Y si necesito cambios despues?',
+			question: '¿Y si necesito cambios después?',
 			answer:
-				'El codigo es tuyo. Puedes contratar cualquier desarrollador para mejorarlo. O podemos seguir trabajando juntos. Muchos clientes continuan con el soporte mensual para pequeños ajustes y nuevas funciones.',
+				'El código es tuyo. Puedes contratar cualquier desarrollador para mejorarlo. O podemos seguir trabajando juntos. Muchos clientes continúan con el soporte mensual para pequeños ajustes y nuevas funciones.',
 		},
 		{
-			question: '¿Por que eres mas barato que una agencia?',
+			question: '¿Por qué eres más barato que una agencia?',
 			answer:
-				'No tengo oficinas, no tengo 20 empleados, no tengo gerentes de proyecto. Soy un desarrollador senior que trabaja directo contigo. Sin intermediarios, sin overhead. Tu pagas por codigo, no por estructura corporativa.',
+				'No tengo oficinas, no tengo 20 empleados, no tengo gerentes de proyecto. Soy un desarrollador senior que trabaja directo contigo. Sin intermediarios, sin overhead. Tú pagas por código, no por estructura corporativa.',
 		},
 		{
-			question: '¿Que pasa si mi idea cambia mientras construimos?',
+			question: '¿Qué pasa si mi idea cambia mientras construimos?',
 			answer:
-				'Es normal. Por eso empezamos con las 3-5 funciones mas importantes y tienes 2 rondas de ajustes incluidas. Si necesitas un cambio grande a mitad de camino, lo conversamos y vemos como adaptarnos.',
+				'Es normal. Por eso empezamos con las 3-5 funciones más importantes y tienes 2 rondas de ajustes incluidas. Si necesitas un cambio grande a mitad de camino, lo conversamos y vemos cómo adaptarnos.',
 		},
 	]
 
@@ -424,7 +478,7 @@ function Contact() {
 						Hablemos de tu idea
 					</h2>
 					<p className="mt-4 text-lg text-gray-300">
-						30 minutos. Sin compromiso. Te cuento si puedo ayudarte y como seria el proceso.
+						30 minutos. Sin compromiso. Te cuento si puedo ayudarte y cómo sería el proceso.
 					</p>
 					<div className="mt-10">
 						<Link
