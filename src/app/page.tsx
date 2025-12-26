@@ -47,21 +47,24 @@ function Hero() {
 					</p>
 					<div className="mt-10 flex flex-col gap-4 sm:flex-row">
 						<Link
-							href="#contacto"
-							className="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-gray-800"
+							href="https://wa.me/521234567890?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-emerald-600"
 						>
-							Agenda tu llamada gratis
-							<ArrowRight className="size-4" />
+							<MessageCircle className="size-5" />
+							Escríbenos por WhatsApp
 						</Link>
 						<Link
-							href="#proceso"
+							href="#contacto"
 							className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50"
 						>
-							Ver cómo funciona
+							<Calendar className="size-4" />
+							Agendar reunión
 						</Link>
 					</div>
 					<p className="mt-6 text-sm text-gray-500">
-						30 minutos. Sin compromiso. Sin jerga técnica.
+						Respuesta en menos de 2 horas. Sin compromiso.
 					</p>
 				</div>
 			</Container>
@@ -509,24 +512,34 @@ function Contact() {
 			<Container>
 				<div className="mx-auto max-w-2xl text-center">
 					<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-						Hablemos de tu idea
+						¿Listo para lanzar tu idea?
 					</h2>
 					<p className="mt-4 text-lg text-gray-300">
-						30 minutos. Sin compromiso. Te contamos si podemos ayudarte y cómo sería el proceso.
+						Escríbenos directo y te respondemos en menos de 2 horas. Sin formularios eternos.
 					</p>
-					<div className="mt-10">
+					<div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
 						<Link
-							href="https://calendly.com"
+							href="https://wa.me/521234567890?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-8 py-4 text-lg font-medium text-white transition-colors hover:bg-emerald-600"
 						>
+							<MessageCircle className="size-5" />
+							Escríbenos por WhatsApp
+						</Link>
+						<span className="text-gray-500">o</span>
+						<Link
+							href="https://calendly.com"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="inline-flex items-center gap-2 rounded-full border border-gray-600 bg-transparent px-8 py-4 text-lg font-medium text-white transition-colors hover:border-gray-500 hover:bg-gray-800"
+						>
 							<Calendar className="size-5" />
-							Agendar llamada gratis
+							Agenda una reunión
 						</Link>
 					</div>
-					<p className="mt-6 text-sm text-gray-400">
-						¿Prefieres escribir?{' '}
+					<p className="mt-8 text-sm text-gray-400">
+						¿Prefieres email?{' '}
 						<a
 							href="mailto:hola@lanzatu.app"
 							className="font-medium text-white underline underline-offset-4"
