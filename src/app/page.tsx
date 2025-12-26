@@ -220,7 +220,7 @@ function Process() {
 			number: '02',
 			title: 'Creamos tu documento de especificación',
 			description:
-				'En 2 días generamos un design document colaborativo: la especificación detallada de tu producto. Es el "prompt" que guía todo el desarrollo.',
+				'En 2 días generamos un documento de diseño colaborativo: la especificación detallada de tu producto. Es el "prompt" que guía todo el desarrollo.',
 			icon: FileText,
 		},
 		{
@@ -544,7 +544,7 @@ function FAQ() {
 		{
 			question: '¿Cómo sé que van a entregar?',
 			answer:
-				'Pagas en 2 partes: 50% al inicio, 50% a la entrega. Cada semana te mostramos el avance. Si en cualquier momento no estás conforme, lo hablamos y ajustamos. Tu dinero está protegido porque solo pagas por avances reales.',
+				'Pagas en 2 partes: 50% al aprobar el documento de diseño, 50% a la entrega. Cada semana te mostramos el avance. Si en cualquier momento no estás conforme, lo hablamos y ajustamos. Tu dinero está protegido porque solo pagas por avances reales.',
 		},
 		{
 			question: '¿Y si necesito cambios después?',
