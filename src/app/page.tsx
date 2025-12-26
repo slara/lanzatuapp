@@ -278,40 +278,30 @@ function Deliverables() {
 			description:
 				'Notificaciones transaccionales, emails de bienvenida y recuperación de contraseña. Todo configurado y listo para enviar.',
 			icon: Mail,
-			gradient: 'from-rose-500 to-orange-500',
-			bgGradient: 'from-rose-50 to-orange-50',
 		},
 		{
 			title: 'Acceso',
 			description:
 				'Autenticación segura con Google, email y redes sociales. Sesiones, tokens y protección de rutas incluidos.',
 			icon: Key,
-			gradient: 'from-violet-500 to-purple-500',
-			bgGradient: 'from-violet-50 to-purple-50',
 		},
 		{
 			title: 'Base de datos',
 			description:
 				'Base de datos PostgreSQL lista para producción. Esquemas, migraciones y backups automáticos configurados.',
 			icon: Database,
-			gradient: 'from-emerald-500 to-teal-500',
-			bgGradient: 'from-emerald-50 to-teal-50',
 		},
 		{
 			title: 'SEO',
 			description:
 				'Metadatos optimizados, sitemap automático y estructura lista para posicionar en Google desde el día uno.',
 			icon: Search,
-			gradient: 'from-blue-500 to-cyan-500',
-			bgGradient: 'from-blue-50 to-cyan-50',
 		},
 		{
 			title: 'Estilos',
 			description:
 				'Sistema de diseño coherente con Tailwind CSS. Componentes reutilizables, tema personalizable y modo oscuro.',
 			icon: Palette,
-			gradient: 'from-pink-500 to-rose-500',
-			bgGradient: 'from-pink-50 to-rose-50',
 		},
 	]
 
@@ -333,11 +323,9 @@ function Deliverables() {
 					{items.map((item) => (
 						<div
 							key={item.title}
-							className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${item.bgGradient} p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl`}
+							className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-50 to-white p-6 ring-1 ring-slate-200/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-emerald-200"
 						>
-							<div
-								className={`flex size-12 items-center justify-center rounded-xl bg-gradient-to-br ${item.gradient} shadow-lg`}
-							>
+							<div className="flex size-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 shadow-lg shadow-emerald-500/25">
 								<item.icon className="size-6 text-white" />
 							</div>
 							<h3 className="mt-4 text-lg font-semibold text-gray-900">
@@ -346,9 +334,7 @@ function Deliverables() {
 							<p className="mt-2 text-sm leading-relaxed text-gray-600">
 								{item.description}
 							</p>
-							<div
-								className={`absolute -bottom-2 -right-2 size-24 rounded-full bg-gradient-to-br ${item.gradient} opacity-10 blur-2xl transition-all duration-300 group-hover:opacity-20`}
-							/>
+							<div className="absolute -bottom-2 -right-2 size-24 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 opacity-10 blur-2xl transition-all duration-300 group-hover:opacity-20" />
 						</div>
 					))}
 				</div>
