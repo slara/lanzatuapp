@@ -40,7 +40,7 @@ function Hero() {
 			<Container>
 				<div className="relative z-10 max-w-2xl pb-20 pt-20 sm:pb-32 sm:pt-28 lg:pt-36">
 					<p className="text-sm font-medium text-emerald-600">
-						Para fundadores sin equipo técnico
+						Para fundadores con ideas por construir
 					</p>
 					<h1 className="mt-4 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
 						Deja de buscar desarrolladores.{' '}
