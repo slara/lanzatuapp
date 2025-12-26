@@ -59,7 +59,7 @@ function Hero() {
 						</Link>
 					</div>
 					<p className="mt-6 text-sm text-gray-500">
-						Respuesta en menos de 2 horas. Sin compromiso.
+						Sin compromiso. Sin jerga técnica.
 					</p>
 				</div>
 			</Container>
@@ -134,7 +134,7 @@ function Process() {
 			number: '01',
 			title: 'Hablamos de tu negocio, no de tecnología',
 			description:
-				'Nos escribes por WhatsApp, nos cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga técnica.',
+				'Nos escribes por WhatsApp y agendamos una llamada. Nos cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga técnica.',
 			icon: MessageCircle,
 		},
 		{
@@ -285,7 +285,7 @@ function Pricing() {
 			description: 'Para validar tu idea rápido',
 			price: '$1,200',
 			features: [
-				'Chat de descubrimiento por WhatsApp',
+				'Llamada de descubrimiento (30 min)',
 				'2-3 funcionalidades core',
 				'Diseño limpio y funcional',
 				'Tu producto online',
@@ -300,7 +300,7 @@ function Pricing() {
 			description: 'El más popular para lanzar',
 			price: '$2,000',
 			features: [
-				'Chat de descubrimiento por WhatsApp',
+				'Llamada de descubrimiento (30 min)',
 				'4-5 funcionalidades core',
 				'Diseño profesional y pulido',
 				'Tu producto online con tu dominio',
@@ -317,7 +317,7 @@ function Pricing() {
 			description: 'Para productos más ambiciosos',
 			price: '$3,500',
 			features: [
-				'Sesión de descubrimiento personalizada',
+				'Llamada de descubrimiento (60 min)',
 				'6-8 funcionalidades core',
 				'Diseño premium personalizado',
 				'Tu producto online con tu dominio',
@@ -479,7 +479,7 @@ function Contact() {
 						Hablemos de tu idea
 					</h2>
 					<p className="mt-4 text-lg text-gray-300">
-						Sin formularios. Sin esperas. Escríbenos directo y te respondemos en menos de 2 horas.
+						Sin formularios. Sin esperas. Escríbenos y agendamos una llamada para conocer tu proyecto.
 					</p>
 					<div className="mt-10">
 						<Link
