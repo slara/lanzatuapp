@@ -63,9 +63,6 @@ function Hero() {
 							Agendar reunión
 						</Link>
 					</div>
-					<p className="mt-6 text-sm text-gray-500">
-						Respuesta en menos de 2 horas. Sin compromiso.
-					</p>
 				</div>
 			</Container>
 		</section>
@@ -515,7 +512,7 @@ function Contact() {
 						¿Listo para lanzar tu idea?
 					</h2>
 					<p className="mt-4 text-lg text-gray-300">
-						Escríbenos directo y te respondemos en menos de 2 horas. Sin formularios eternos.
+						Escríbenos directo. Sin formularios eternos.
 					</p>
 					<div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
 						<Link
