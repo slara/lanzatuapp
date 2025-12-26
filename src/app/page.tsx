@@ -639,9 +639,9 @@ export default function Home() {
 			<main className="bg-white">
 				<TrustBadges />
 				<Problem />
-				<Craftsmanship />
 				<Process />
 				<Deliverables />
+				<Craftsmanship />
 				<Pricing />
 				<FAQ />
 				<Contact />
