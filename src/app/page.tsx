@@ -10,17 +10,20 @@ import {
 	Check,
 	Cloud,
 	Code,
+	Database,
 	FileText,
 	Gem,
 	Globe,
 	Hammer,
-	LayoutDashboard,
+	Key,
 	Lock,
+	Mail,
 	MessageCircle,
+	Palette,
+	Search,
 	Shield,
 	Smartphone,
 	Sparkles,
-	Users,
 	Wrench,
 	Zap,
 } from 'lucide-react'
@@ -271,52 +274,44 @@ function Process() {
 function Deliverables() {
 	const items = [
 		{
-			title: 'Sistema de usuarios listo',
+			title: 'Email',
 			description:
-				'Tus clientes pueden registrarse con Google, email o redes sociales. Listo para manejar múltiples empresas si lo necesitas.',
-			icon: Users,
+				'Notificaciones transaccionales, emails de bienvenida y recuperación de contraseña. Todo configurado y listo para enviar.',
+			icon: Mail,
+			gradient: 'from-rose-500 to-orange-500',
+			bgGradient: 'from-rose-50 to-orange-50',
 		},
 		{
-			title: 'Página de inicio profesional',
+			title: 'Login',
 			description:
-				'Landing page lista para convertir visitantes en clientes. Fácil de editar el texto cuando quieras.',
-			icon: Globe,
+				'Autenticación segura con Google, email y redes sociales. Sesiones, tokens y protección de rutas incluidos.',
+			icon: Key,
+			gradient: 'from-violet-500 to-purple-500',
+			bgGradient: 'from-violet-50 to-purple-50',
 		},
 		{
-			title: 'Panel de administración',
+			title: 'Database',
 			description:
-				'Dashboard donde ves todo: usuarios, datos, métricas. Con tablas, filtros y formularios listos.',
-			icon: LayoutDashboard,
+				'Base de datos PostgreSQL lista para producción. Esquemas, migraciones y backups automáticos configurados.',
+			icon: Database,
+			gradient: 'from-emerald-500 to-teal-500',
+			bgGradient: 'from-emerald-50 to-teal-50',
 		},
 		{
-			title: 'Tu información segura',
+			title: 'SEO',
 			description:
-				'Base de datos profesional. Tu información organizada, respaldada y lista para crecer.',
-			icon: Shield,
+				'Metadatos optimizados, sitemap automático y estructura lista para posicionar en Google desde el día uno.',
+			icon: Search,
+			gradient: 'from-blue-500 to-cyan-500',
+			bgGradient: 'from-blue-50 to-cyan-50',
 		},
 		{
-			title: 'Listo para conectar',
+			title: 'Styles',
 			description:
-				'Backend preparado para integraciones futuras. Pasarelas de pago, emails, lo que necesites.',
-			icon: Zap,
-		},
-		{
-			title: 'Online con tu dominio',
-			description:
-				'tuapp.com funcionando. Ambiente de pruebas y producción. Certificado de seguridad incluido.',
-			icon: Cloud,
-		},
-		{
-			title: 'El código es tuyo',
-			description:
-				'Repositorio completo en GitHub. Código limpio, testeado y bien estructurado. Tu futuro CTO puede continuar sin problemas.',
-			icon: Lock,
-		},
-		{
-			title: 'Documentación completa',
-			description:
-				'Guía de arquitectura, decisiones técnicas documentadas, y manual de despliegue. Construido para que cualquier desarrollador lo entienda.',
-			icon: FileText,
+				'Sistema de diseño coherente con Tailwind CSS. Componentes reutilizables, tema personalizable y modo oscuro.',
+			icon: Palette,
+			gradient: 'from-pink-500 to-rose-500',
+			bgGradient: 'from-pink-50 to-rose-50',
 		},
 	]
 
@@ -331,24 +326,29 @@ function Deliverables() {
 						Todo lo que necesitas para lanzar
 					</h2>
 					<p className="mt-4 text-lg text-gray-600">
-						No empezamos de cero. Hemos desarrollado un kit moderno, con todo lo necesario.
+						No empezamos de cero. Nuestro kit incluye todo lo esencial, listo para personalizar.
 					</p>
 				</div>
-				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+				<div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
 					{items.map((item) => (
 						<div
 							key={item.title}
-							className="rounded-xl border border-gray-200 bg-white p-6 transition-shadow hover:shadow-md"
+							className={`group relative overflow-hidden rounded-2xl bg-gradient-to-br ${item.bgGradient} p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl`}
 						>
-							<div className="flex size-10 items-center justify-center rounded-lg bg-emerald-100">
-								<item.icon className="size-5 text-emerald-600" />
+							<div
+								className={`flex size-12 items-center justify-center rounded-xl bg-gradient-to-br ${item.gradient} shadow-lg`}
+							>
+								<item.icon className="size-6 text-white" />
 							</div>
-							<h3 className="mt-4 text-base font-semibold text-gray-900">
+							<h3 className="mt-4 text-lg font-semibold text-gray-900">
 								{item.title}
 							</h3>
 							<p className="mt-2 text-sm leading-relaxed text-gray-600">
 								{item.description}
 							</p>
+							<div
+								className={`absolute -bottom-2 -right-2 size-24 rounded-full bg-gradient-to-br ${item.gradient} opacity-10 blur-2xl transition-all duration-300 group-hover:opacity-20`}
+							/>
 						</div>
 					))}
 				</div>
