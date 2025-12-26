@@ -559,6 +559,11 @@ function FAQ() {
 			answer:
 				'Usamos IA como herramienta, no como reemplazo. La inteligencia artificial nos ayuda a ser más productivos, pero cada decisión de arquitectura, cada patrón de diseño y cada línea de código pasa por revisión humana. No hacemos "vibe coding" — hacemos ingeniería de software con criterio. La IA acelera, pero la experiencia y el buen juicio son nuestros.',
 		},
+		{
+			question: '¿Cómo logran entregar en solo 3 semanas?',
+			answer:
+				'Tenemos un kit base probado con autenticación, pagos, dashboards y todas las piezas comunes ya resueltas. No empezamos de cero — empezamos con una base sólida y nos enfocamos en construir lo que hace único a tu producto. Eso nos permite ir rápido sin sacrificar calidad.',
+		},
 	]
 
 	return (
