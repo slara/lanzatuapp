@@ -47,7 +47,7 @@ function Hero() {
 						<span className="text-emerald-600">Lanza tu producto.</span>
 					</h1>
 					<p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-600">
-						Tienes una idea validada pero no quien la lleve a cabo. En 3 semanas la convertimos en un producto real que puedes mostrar a inversionistas y vender a tus primeros clientes.
+						Tienes una idea y quieres validarla con un MVP. En 3 semanas la convertimos en un producto real que puedes mostrar a inversionistas y vender a tus primeros clientes.
 					</p>
 					<div className="mt-10 flex flex-col gap-4 sm:flex-row">
 						<Link
