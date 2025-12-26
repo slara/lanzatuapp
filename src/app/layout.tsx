@@ -5,9 +5,11 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Radiant',
-    default: 'Radiant - Close every deal',
+    template: '%s - lanzatu.app',
+    default: 'lanzatu.app - Tu idea, en produccion en 2-3 semanas',
   },
+  description:
+    'Construimos tu MVP con codigo profesional en 2-3 semanas. Next.js, FastAPI, PostgreSQL. El codigo es 100% tuyo.',
 }
 
 export default function RootLayout({
@@ -16,17 +18,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="es" className="scroll-smooth">
       <head>
         <link
           rel="stylesheet"
           href="https://api.fontshare.com/css?f%5B%5D=switzer@400,500,600,700&amp;display=swap"
-        />
-        <link
-          rel="alternate"
-          type="application/rss+xml"
-          title="The Radiant Blog"
-          href="/blog/feed.xml"
         />
       </head>
       <body className="text-gray-950 antialiased">
