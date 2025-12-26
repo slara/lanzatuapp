@@ -133,19 +133,19 @@ function Process() {
 			number: '01',
 			title: 'Hablamos de tu negocio, no de tecnología',
 			description:
-				'En 30 minutos me cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga técnica.',
+				'En 30 minutos nos cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga técnica.',
 			icon: Calendar,
 		},
 		{
 			number: '02',
 			title: 'Construimos mientras tú vendes',
 			description:
-				'Durante 3 semanas desarrollo tu producto. Cada semana te muestro el avance. Tú te enfocas en conseguir tus primeros clientes.',
+				'Durante 3 semanas desarrollamos tu producto. Cada semana te mostramos el avance. Tú te enfocas en conseguir tus primeros clientes.',
 			icon: Code,
 		},
 		{
 			number: '03',
-			title: 'Lanzamos y te entrego todo',
+			title: 'Lanzamos y te entregamos todo',
 			description:
 				'Tu producto online, funcionando, con tu dominio. El código es 100% tuyo. Cuando contrates un CTO, puede continuar sin problemas.',
 			icon: Cloud,
@@ -405,7 +405,7 @@ function Pricing() {
 									Soporte continuo (opcional)
 								</p>
 								<p className="mt-1 text-sm text-gray-600">
-									$200-300 USD/mes. Me encargo del hosting, monitoreo y pequeños ajustes. Tú solo vendes.
+									$200-300 USD/mes. Nos encargamos del hosting, monitoreo y pequeños ajustes. Tú solo vendes.
 								</p>
 							</div>
 						</div>
@@ -421,17 +421,17 @@ function FAQ() {
 		{
 			question: 'No sé nada de tecnología. ¿Esto es para mí?',
 			answer:
-				'Sí. De hecho, es exactamente para ti. En nuestra llamada hablamos de tu negocio: qué problema resuelves, quiénes son tus clientes, cómo quieres ganar dinero. Yo me encargo de traducir eso a tecnología. Nunca vas a escuchar jerga técnica.',
+				'Sí. De hecho, es exactamente para ti. En nuestra llamada hablamos de tu negocio: qué problema resuelves, quiénes son tus clientes, cómo quieres ganar dinero. Nosotros nos encargamos de traducir eso a tecnología. Nunca vas a escuchar jerga técnica.',
 		},
 		{
 			question: '¿Por qué 3 semanas y no 3 días?',
 			answer:
-				'Podría entregar algo en 3 días, pero sería código que tu futuro CTO tiraría a la basura. 3 semanas me permiten construir algo sólido, con buenas bases, que puede crecer contigo. Es la diferencia entre una casa prefabricada y una con cimientos reales.',
+				'Podríamos entregar algo en 3 días, pero sería código que tu futuro CTO tiraría a la basura. 3 semanas nos permiten construir algo sólido, con buenas bases, que puede crecer contigo. Es la diferencia entre una casa prefabricada y una con cimientos reales.',
 		},
 		{
-			question: '¿Cómo sé que vas a entregar?',
+			question: '¿Cómo sé que van a entregar?',
 			answer:
-				'Pagas en 3 partes: 40% al inicio, 30% a mitad del proyecto, 30% a la entrega. Cada semana te muestro el avance. Si en cualquier momento no estás conforme, lo hablamos y ajustamos. Tu dinero está protegido porque solo pagas por avances reales.',
+				'Pagas en 3 partes: 40% al inicio, 30% a mitad del proyecto, 30% a la entrega. Cada semana te mostramos el avance. Si en cualquier momento no estás conforme, lo hablamos y ajustamos. Tu dinero está protegido porque solo pagas por avances reales.',
 		},
 		{
 			question: '¿Y si necesito cambios después?',
@@ -439,9 +439,9 @@ function FAQ() {
 				'El código es tuyo. Puedes contratar cualquier desarrollador para mejorarlo. O podemos seguir trabajando juntos. Muchos clientes continúan con el soporte mensual para pequeños ajustes y nuevas funciones.',
 		},
 		{
-			question: '¿Por qué eres más barato que una agencia?',
+			question: '¿Por qué son más baratos que una agencia?',
 			answer:
-				'No tengo oficinas, no tengo 20 empleados, no tengo gerentes de proyecto. Soy un desarrollador senior que trabaja directo contigo. Sin intermediarios, sin overhead. Tú pagas por código, no por estructura corporativa.',
+				'No tenemos oficinas, no tenemos 20 empleados, no tenemos gerentes de proyecto. Somos un equipo de desarrolladores senior que trabaja directo contigo. Sin intermediarios, sin overhead. Tú pagas por código, no por estructura corporativa.',
 		},
 		{
 			question: '¿Qué pasa si mi idea cambia mientras construimos?',
@@ -478,7 +478,7 @@ function Contact() {
 						Hablemos de tu idea
 					</h2>
 					<p className="mt-4 text-lg text-gray-300">
-						30 minutos. Sin compromiso. Te cuento si puedo ayudarte y cómo sería el proceso.
+						30 minutos. Sin compromiso. Te contamos si podemos ayudarte y cómo sería el proceso.
 					</p>
 					<div className="mt-10">
 						<Link
