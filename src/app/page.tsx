@@ -274,7 +274,7 @@ function Process() {
 function Deliverables() {
 	const items = [
 		{
-			title: 'Email',
+			title: 'Correo',
 			description:
 				'Notificaciones transaccionales, emails de bienvenida y recuperación de contraseña. Todo configurado y listo para enviar.',
 			icon: Mail,
@@ -282,7 +282,7 @@ function Deliverables() {
 			bgGradient: 'from-rose-50 to-orange-50',
 		},
 		{
-			title: 'Login',
+			title: 'Acceso',
 			description:
 				'Autenticación segura con Google, email y redes sociales. Sesiones, tokens y protección de rutas incluidos.',
 			icon: Key,
@@ -290,7 +290,7 @@ function Deliverables() {
 			bgGradient: 'from-violet-50 to-purple-50',
 		},
 		{
-			title: 'Database',
+			title: 'Base de datos',
 			description:
 				'Base de datos PostgreSQL lista para producción. Esquemas, migraciones y backups automáticos configurados.',
 			icon: Database,
@@ -306,7 +306,7 @@ function Deliverables() {
 			bgGradient: 'from-blue-50 to-cyan-50',
 		},
 		{
-			title: 'Styles',
+			title: 'Estilos',
 			description:
 				'Sistema de diseño coherente con Tailwind CSS. Componentes reutilizables, tema personalizable y modo oscuro.',
 			icon: Palette,
