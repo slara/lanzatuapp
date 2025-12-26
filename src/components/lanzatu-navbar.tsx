@@ -33,7 +33,7 @@ function DesktopNav() {
         href="#contacto"
         className="rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-800"
       >
-        Agendar llamada
+        WhatsApp
       </Link>
     </nav>
   )
@@ -84,7 +84,7 @@ function MobileNav() {
             href="#contacto"
             className="inline-block rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white"
           >
-            Agendar llamada
+            WhatsApp
           </Link>
         </motion.div>
       </div>

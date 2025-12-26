@@ -13,6 +13,7 @@ import {
 	Globe,
 	LayoutDashboard,
 	Lock,
+	MessageCircle,
 	Shield,
 	Users,
 	Zap,
@@ -47,8 +48,8 @@ function Hero() {
 							href="#contacto"
 							className="inline-flex items-center justify-center gap-2 rounded-full bg-gray-900 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-gray-800"
 						>
-							Agenda tu llamada gratis
-							<ArrowRight className="size-4" />
+							<MessageCircle className="size-4" />
+							Escríbenos por WhatsApp
 						</Link>
 						<Link
 							href="#proceso"
@@ -58,7 +59,7 @@ function Hero() {
 						</Link>
 					</div>
 					<p className="mt-6 text-sm text-gray-500">
-						30 minutos. Sin compromiso. Sin jerga técnica.
+						Respuesta en menos de 2 horas. Sin compromiso.
 					</p>
 				</div>
 			</Container>
@@ -133,8 +134,8 @@ function Process() {
 			number: '01',
 			title: 'Hablamos de tu negocio, no de tecnología',
 			description:
-				'En 30 minutos nos cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga técnica.',
-			icon: Calendar,
+				'Nos escribes por WhatsApp, nos cuentas qué problema resuelves y para quién. Juntos definimos las 3-5 funciones que tu producto necesita para validar. Cero jerga técnica.',
+			icon: MessageCircle,
 		},
 		{
 			number: '02',
@@ -284,7 +285,7 @@ function Pricing() {
 			description: 'Para validar tu idea rápido',
 			price: '$1,200',
 			features: [
-				'Llamada de descubrimiento (30 min)',
+				'Chat de descubrimiento por WhatsApp',
 				'2-3 funcionalidades core',
 				'Diseño limpio y funcional',
 				'Tu producto online',
@@ -299,7 +300,7 @@ function Pricing() {
 			description: 'El más popular para lanzar',
 			price: '$2,000',
 			features: [
-				'Llamada de descubrimiento (30 min)',
+				'Chat de descubrimiento por WhatsApp',
 				'4-5 funcionalidades core',
 				'Diseño profesional y pulido',
 				'Tu producto online con tu dominio',
@@ -316,7 +317,7 @@ function Pricing() {
 			description: 'Para productos más ambiciosos',
 			price: '$3,500',
 			features: [
-				'Llamada de descubrimiento (60 min)',
+				'Sesión de descubrimiento personalizada',
 				'6-8 funcionalidades core',
 				'Diseño premium personalizado',
 				'Tu producto online con tu dominio',
@@ -478,21 +479,21 @@ function Contact() {
 						Hablemos de tu idea
 					</h2>
 					<p className="mt-4 text-lg text-gray-300">
-						30 minutos. Sin compromiso. Te contamos si podemos ayudarte y cómo sería el proceso.
+						Sin formularios. Sin esperas. Escríbenos directo y te respondemos en menos de 2 horas.
 					</p>
 					<div className="mt-10">
 						<Link
-							href="https://calendly.com"
+							href="https://wa.me/1234567890?text=Hola!%20Tengo%20una%20idea%20y%20me%20gustaría%20saber%20más%20sobre%20cómo%20trabajan"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-8 py-4 text-lg font-medium text-white transition-colors hover:bg-emerald-600"
 						>
-							<Calendar className="size-5" />
-							Agendar llamada gratis
+							<MessageCircle className="size-5" />
+							Escríbenos por WhatsApp
 						</Link>
 					</div>
 					<p className="mt-6 text-sm text-gray-400">
-						¿Prefieres escribir?{' '}
+						¿Prefieres email?{' '}
 						<a
 							href="mailto:hola@lanzatu.app"
 							className="font-medium text-white underline underline-offset-4"
