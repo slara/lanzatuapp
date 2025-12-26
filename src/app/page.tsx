@@ -11,13 +11,17 @@ import {
 	Cloud,
 	Code,
 	FileText,
+	Gem,
 	Globe,
+	Hammer,
 	LayoutDashboard,
 	Lock,
 	MessageCircle,
 	Shield,
 	Smartphone,
+	Sparkles,
 	Users,
+	Wrench,
 	Zap,
 } from 'lucide-react'
 import type { Metadata } from 'next'
@@ -75,6 +79,10 @@ function TrustBadges() {
 			<Container>
 				<div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm text-gray-600">
 					<div className="flex items-center gap-2">
+						<Gem className="size-4 text-emerald-500" />
+						<span>Código de calidad</span>
+					</div>
+					<div className="flex items-center gap-2">
 						<Zap className="size-4 text-emerald-500" />
 						<span>Listo en 3 semanas</span>
 					</div>
@@ -87,8 +95,8 @@ function TrustBadges() {
 						<span>Precio fijo, sin sorpresas</span>
 					</div>
 					<div className="flex items-center gap-2">
-						<Cloud className="size-4 text-emerald-500" />
-						<span>Listo para escalar</span>
+						<Sparkles className="size-4 text-emerald-500" />
+						<span>Potenciado con IA</span>
 					</div>
 				</div>
 			</Container>
@@ -124,6 +132,75 @@ function Problem() {
 							</p>
 						</div>
 					</div>
+				</div>
+			</Container>
+		</section>
+	)
+}
+
+function Craftsmanship() {
+	const principles = [
+		{
+			icon: Hammer,
+			title: 'Desarrolladores, no ensambladores',
+			description:
+				'Cada línea de código es escrita con intención. No copiamos y pegamos soluciones genéricas. Diseñamos arquitecturas pensadas para tu negocio específico.',
+		},
+		{
+			icon: Gem,
+			title: 'Calidad que se nota',
+			description:
+				'Código limpio, bien documentado y fácil de mantener. Tu futuro equipo técnico nos lo agradecerá. No dejamos deuda técnica escondida.',
+		},
+		{
+			icon: Sparkles,
+			title: 'IA como herramienta, no como atajo',
+			description:
+				'Usamos inteligencia artificial para potenciar nuestro trabajo, no para reemplazarlo. La IA acelera, pero el criterio y la experiencia son nuestros.',
+		},
+		{
+			icon: Wrench,
+			title: 'Ingeniería, no improvisación',
+			description:
+				'Nada de "vibe coding". Cada decisión técnica tiene fundamento. Tests, revisiones de código y estándares profesionales en cada proyecto.',
+		},
+	]
+
+	return (
+		<section className="border-t border-gray-200 bg-white py-16 sm:py-24">
+			<Container>
+				<div className="mx-auto max-w-2xl text-center">
+					<p className="text-sm font-medium text-emerald-600">
+						Nuestra filosofía
+					</p>
+					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+						Software hecho con criterio
+					</h2>
+					<p className="mt-4 text-lg text-gray-600">
+						En un mundo de soluciones rápidas y código desechable, nosotros construimos productos que duran. Combinamos experiencia humana con tecnología de punta.
+					</p>
+				</div>
+				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2">
+					{principles.map((principle) => (
+						<div
+							key={principle.title}
+							className="relative rounded-xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white p-6"
+						>
+							<div className="flex items-start gap-4">
+								<div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100">
+									<principle.icon className="size-6 text-emerald-600" />
+								</div>
+								<div>
+									<h3 className="text-lg font-semibold text-gray-900">
+										{principle.title}
+									</h3>
+									<p className="mt-2 text-base leading-relaxed text-gray-600">
+										{principle.description}
+									</p>
+								</div>
+							</div>
+						</div>
+					))}
 				</div>
 			</Container>
 		</section>
@@ -232,13 +309,13 @@ function Deliverables() {
 		{
 			title: 'El código es tuyo',
 			description:
-				'Repositorio completo en GitHub. Sin dependencias raras. Tu futuro CTO puede continuar sin problemas.',
+				'Repositorio completo en GitHub. Código limpio, testeado y bien estructurado. Tu futuro CTO puede continuar sin problemas.',
 			icon: Lock,
 		},
 		{
 			title: 'Documentación completa',
 			description:
-				'Guía de arquitectura, cómo funciona cada parte, y manual de despliegue. Tu equipo futuro te lo agradecerá.',
+				'Guía de arquitectura, decisiones técnicas documentadas, y manual de despliegue. Construido para que cualquier desarrollador lo entienda.',
 			icon: FileText,
 		},
 	]
@@ -482,6 +559,11 @@ function FAQ() {
 			answer:
 				'Es normal. Por eso empezamos con las 3-5 funciones más importantes y tienes 2 rondas de ajustes incluidas. Si necesitas un cambio grande a mitad de camino, lo conversamos y vemos cómo adaptarnos.',
 		},
+		{
+			question: '¿Usan IA para escribir el código?',
+			answer:
+				'Usamos IA como herramienta, no como reemplazo. La inteligencia artificial nos ayuda a ser más productivos, pero cada decisión de arquitectura, cada patrón de diseño y cada línea de código pasa por revisión humana. No hacemos "vibe coding" — hacemos ingeniería de software con criterio. La IA acelera, pero la experiencia y el buen juicio son nuestros.',
+		},
 	]
 
 	return (
@@ -562,6 +644,7 @@ export default function Home() {
 			<main className="bg-white">
 				<TrustBadges />
 				<Problem />
+				<Craftsmanship />
 				<Process />
 				<Deliverables />
 				<Pricing />
