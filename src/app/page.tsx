@@ -177,7 +177,7 @@ function Craftsmanship() {
 						Nuestra filosofía
 					</p>
 					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						Software hecho con criterio
+						Software hecho con atención al detalle
 					</h2>
 					<p className="mt-4 text-lg text-gray-600">
 						En un mundo de soluciones rápidas y código desechable, nosotros construimos productos que duran. Combinamos experiencia humana con tecnología de punta.
