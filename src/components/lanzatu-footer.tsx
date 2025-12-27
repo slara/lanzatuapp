@@ -46,7 +46,7 @@ export function LanzatuFooter() {
           </div>
           <div className="mt-8 flex flex-col items-center gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:justify-between">
             <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} lanzatu.app. Todos los derechos reservados.
+              &copy; {new Date().getFullYear()} lanzatu.app. Todos los derechos reservados. By ModoAutomatico.
             </p>
             <div className="flex gap-6 text-sm text-gray-500">
               <Link href="#" className="hover:text-gray-900">

@@ -54,7 +54,7 @@ function Hero() {
 					</p>
 					<div className="mt-10 flex flex-col gap-4 sm:flex-row">
 						<Link
-							href="https://wa.me/521234567890?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
+							href="https://wa.me/56993289547?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-emerald-600"
@@ -584,7 +584,7 @@ function Contact() {
 					</p>
 					<div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
 						<Link
-							href="https://wa.me/521234567890?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
+							href="https://wa.me/56993289547?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
 							target="_blank"
 							rel="noopener noreferrer"
 							className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-8 py-4 text-lg font-medium text-white transition-colors hover:bg-emerald-600"
@@ -606,10 +606,10 @@ function Contact() {
 					<p className="mt-8 text-sm text-gray-400">
 						¿Prefieres email?{' '}
 						<a
-							href="mailto:hola@lanzatu.app"
+							href="mailto:seba@modoautomatico.app"
 							className="font-medium text-white underline underline-offset-4"
 						>
-							hola@lanzatu.app
+							seba@modoautomatico.app
 						</a>
 					</p>
 				</div>
