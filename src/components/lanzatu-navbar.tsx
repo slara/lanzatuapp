@@ -25,7 +25,7 @@ function DesktopNav() {
         <Link
           key={href}
           href={href}
-          className="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+          className="text-sm font-medium text-gray-400 transition-colors hover:text-white"
         >
           {label}
         </Link>
@@ -34,7 +34,7 @@ function DesktopNav() {
         href="https://wa.me/56993289547?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-600"
+        className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-4 py-2 text-sm font-medium text-white transition-all hover:shadow-[0_0_20px_rgba(0,245,255,0.3)]"
       >
         <MessageCircle className="size-4" />
         Conversemos
@@ -46,7 +46,7 @@ function DesktopNav() {
 function MobileNavButton({ open }: { open: boolean }) {
   return (
     <DisclosureButton
-      className="flex size-10 items-center justify-center rounded-lg text-gray-600 hover:bg-gray-100 lg:hidden"
+      className="flex size-10 items-center justify-center rounded-lg text-gray-400 hover:bg-white/5 hover:text-white lg:hidden"
       aria-label={open ? 'Cerrar menu' : 'Abrir menu'}
     >
       {open ? <XMarkIcon className="size-6" /> : <Bars2Icon className="size-6" />}
@@ -57,7 +57,7 @@ function MobileNavButton({ open }: { open: boolean }) {
 function MobileNav() {
   return (
     <DisclosurePanel className="lg:hidden">
-      <div className="flex flex-col gap-4 border-t border-gray-200 py-6">
+      <div className="flex flex-col gap-4 border-t border-white/10 py-6">
         {links.map(({ href, label }, linkIndex) => (
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -70,7 +70,7 @@ function MobileNav() {
           >
             <Link
               href={href}
-              className="block text-base font-medium text-gray-600 hover:text-gray-900"
+              className="block text-base font-medium text-gray-400 hover:text-white"
             >
               {label}
             </Link>
@@ -88,7 +88,7 @@ function MobileNav() {
             href="https://wa.me/56993289547?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-4 py-2 text-sm font-medium text-white"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-4 py-2 text-sm font-medium text-white"
           >
             <MessageCircle className="size-4" />
             Conversemos

@@ -19,19 +19,19 @@ interface FAQAccordionProps {
 
 export function FAQAccordion({ items }: FAQAccordionProps) {
   return (
-    <div className="divide-y divide-gray-200">
+    <div className="divide-y divide-white/5">
       {items.map((item, index) => (
         <Disclosure as="div" key={index} className="py-6">
           {({ open }) => (
             <>
-              <DisclosureButton className="flex w-full items-start justify-between text-left">
-                <span className="text-base font-medium text-gray-900 pr-4">
+              <DisclosureButton className="group flex w-full items-start justify-between text-left">
+                <span className="text-base font-medium text-white pr-4 transition-colors group-hover:text-cyan-400">
                   {item.question}
                 </span>
                 <span className="ml-6 flex h-7 items-center">
                   <ChevronDownIcon
-                    className={`size-5 text-gray-500 transition-transform duration-200 ${
-                      open ? 'rotate-180' : ''
+                    className={`size-5 text-gray-500 transition-all duration-200 group-hover:text-cyan-400 ${
+                      open ? 'rotate-180 text-cyan-400' : ''
                     }`}
                   />
                 </span>
@@ -46,7 +46,7 @@ export function FAQAccordion({ items }: FAQAccordionProps) {
                       transition={{ duration: 0.2, ease: 'easeInOut' }}
                       className="overflow-hidden"
                     >
-                      <p className="mt-4 text-base text-gray-600 leading-relaxed">
+                      <p className="mt-4 text-base text-gray-400 leading-relaxed">
                         {item.answer}
                       </p>
                     </motion.div>

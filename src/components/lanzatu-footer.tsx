@@ -20,7 +20,8 @@ function SocialIconX(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export function LanzatuFooter() {
   return (
-    <footer className="border-t border-gray-200 bg-gray-50">
+    <footer className="relative border-t border-white/5 bg-[#0a0a0f]">
+      <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
       <Container>
         <div className="py-12">
           <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-between">
@@ -30,7 +31,7 @@ export function LanzatuFooter() {
                 href="https://linkedin.com"
                 target="_blank"
                 aria-label="LinkedIn"
-                className="text-gray-500 transition-colors hover:text-gray-900"
+                className="text-gray-500 transition-colors hover:text-cyan-400"
               >
                 <SocialIconLinkedIn className="size-5" />
               </Link>
@@ -38,21 +39,21 @@ export function LanzatuFooter() {
                 href="https://x.com"
                 target="_blank"
                 aria-label="X (Twitter)"
-                className="text-gray-500 transition-colors hover:text-gray-900"
+                className="text-gray-500 transition-colors hover:text-cyan-400"
               >
                 <SocialIconX className="size-5" />
               </Link>
             </div>
           </div>
-          <div className="mt-8 flex flex-col items-center gap-4 border-t border-gray-200 pt-8 sm:flex-row sm:justify-between">
+          <div className="mt-8 flex flex-col items-center gap-4 border-t border-white/5 pt-8 sm:flex-row sm:justify-between">
             <p className="text-sm text-gray-500">
               &copy; {new Date().getFullYear()} lanzatu.app. Todos los derechos reservados. By ModoAutomatico.
             </p>
             <div className="flex gap-6 text-sm text-gray-500">
-              <Link href="#" className="hover:text-gray-900">
+              <Link href="#" className="hover:text-white">
                 Privacidad
               </Link>
-              <Link href="#" className="hover:text-gray-900">
+              <Link href="#" className="hover:text-white">
                 Terminos
               </Link>
             </div>
