@@ -38,18 +38,24 @@ export const metadata: Metadata = {
 
 function Hero() {
 	return (
-		<section className="relative overflow-hidden" style={{ minHeight: '700px' }}>
+		<section className="relative overflow-hidden bg-[#0a0a0f]" style={{ minHeight: '700px' }}>
+			<div className="absolute inset-0 grid-pattern opacity-50" />
+			<div className="absolute -left-40 -top-40 h-80 w-80 rounded-full bg-cyan-500/10 blur-[100px]" />
+			<div className="absolute -bottom-40 -right-40 h-80 w-80 rounded-full bg-purple-500/10 blur-[100px]" />
 			<GlobeBackground />
 			<Container>
 				<div className="relative z-10 max-w-2xl pb-20 pt-20 sm:pb-32 sm:pt-28 lg:pt-36">
-					<p className="text-sm font-medium text-emerald-600">
-						Para fundadores con ideas por construir
-					</p>
-					<h1 className="mt-4 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+					<div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-1.5 backdrop-blur-sm">
+						<span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
+						<span className="text-sm font-medium text-cyan-300">
+							Para fundadores con ideas por construir
+						</span>
+					</div>
+					<h1 className="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
 						Deja de buscar desarrolladores.{' '}
-						<span className="text-emerald-600">Lanza tu producto.</span>
+						<span className="text-gradient-cyber">Lanza tu producto.</span>
 					</h1>
-					<p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-600">
+					<p className="mt-6 max-w-xl text-lg leading-relaxed text-gray-400">
 						Tienes una idea y quieres validarla con un MVP. En 3 semanas la convertimos en un producto real que puedes mostrar a inversionistas y vender a tus primeros clientes.
 					</p>
 					<div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -57,14 +63,15 @@ function Hero() {
 							href="https://wa.me/56993289547?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-3 text-base font-medium text-white transition-colors hover:bg-emerald-600"
+							className="group inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 text-base font-medium text-white transition-all hover:shadow-[0_0_30px_rgba(0,245,255,0.3)]"
 						>
 							<MessageCircle className="size-5" />
 							Escríbenos por WhatsApp
+							<ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
 						</Link>
 						<Link
 							href="#contacto"
-							className="inline-flex items-center justify-center gap-2 rounded-full border border-gray-300 bg-white px-6 py-3 text-base font-medium text-gray-700 transition-colors hover:bg-gray-50"
+							className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-base font-medium text-white backdrop-blur-sm transition-all hover:border-cyan-500/30 hover:bg-white/10"
 						>
 							<Calendar className="size-4" />
 							Agendar reunión
@@ -78,27 +85,27 @@ function Hero() {
 
 function TrustBadges() {
 	return (
-		<section className="border-y border-gray-200 bg-gray-50 py-8">
+		<section className="border-y border-white/5 bg-[#0a0a0f] py-8">
 			<Container>
-				<div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm text-gray-600">
+				<div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-sm text-gray-400">
 					<div className="flex items-center gap-2">
-						<Gem className="size-4 text-emerald-500" />
+						<Gem className="size-4 text-cyan-400" />
 						<span>Código de calidad</span>
 					</div>
 					<div className="flex items-center gap-2">
-						<Zap className="size-4 text-emerald-500" />
+						<Zap className="size-4 text-cyan-400" />
 						<span>Listo en 3 semanas</span>
 					</div>
 					<div className="flex items-center gap-2">
-						<Lock className="size-4 text-emerald-500" />
+						<Lock className="size-4 text-cyan-400" />
 						<span>El código es tuyo</span>
 					</div>
 					<div className="flex items-center gap-2">
-						<Shield className="size-4 text-emerald-500" />
+						<Shield className="size-4 text-cyan-400" />
 						<span>Precio fijo, sin sorpresas</span>
 					</div>
 					<div className="flex items-center gap-2">
-						<Sparkles className="size-4 text-emerald-500" />
+						<Sparkles className="size-4 text-cyan-400" />
 						<span>Potenciado con IA</span>
 					</div>
 				</div>
@@ -109,28 +116,38 @@ function TrustBadges() {
 
 function Problem() {
 	return (
-		<section className="py-16 sm:py-24">
+		<section className="relative bg-[#0f0f18] py-16 sm:py-24">
+			<div className="absolute inset-0 grid-pattern opacity-30" />
 			<Container>
-				<div className="mx-auto max-w-3xl text-center">
-					<h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+				<div className="relative mx-auto max-w-3xl text-center">
+					<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
 						Construir tu primer producto no debería ser tan difícil
 					</h2>
-					<div className="mt-12 grid gap-8 text-left sm:grid-cols-3">
-						<div className="rounded-xl border border-red-100 bg-red-50/50 p-6">
-							<p className="font-medium text-gray-900">Contratar una agencia</p>
-							<p className="mt-2 text-sm text-gray-600">
+					<div className="mt-12 grid gap-6 text-left sm:grid-cols-3">
+						<div className="group rounded-2xl border border-red-500/20 bg-red-500/5 p-6 backdrop-blur-sm transition-all hover:border-red-500/30 hover:bg-red-500/10">
+							<div className="mb-4 flex size-10 items-center justify-center rounded-lg bg-red-500/10">
+								<span className="text-lg">💸</span>
+							</div>
+							<p className="font-medium text-white">Contratar una agencia</p>
+							<p className="mt-2 text-sm text-gray-400">
 								$15,000+ USD, 3-6 meses, y al final dependes de ellos para cada cambio.
 							</p>
 						</div>
-						<div className="rounded-xl border border-red-100 bg-red-50/50 p-6">
-							<p className="font-medium text-gray-900">Buscar freelancers</p>
-							<p className="mt-2 text-sm text-gray-600">
+						<div className="group rounded-2xl border border-orange-500/20 bg-orange-500/5 p-6 backdrop-blur-sm transition-all hover:border-orange-500/30 hover:bg-orange-500/10">
+							<div className="mb-4 flex size-10 items-center justify-center rounded-lg bg-orange-500/10">
+								<span className="text-lg">🎲</span>
+							</div>
+							<p className="font-medium text-white">Buscar freelancers</p>
+							<p className="mt-2 text-sm text-gray-400">
 								Semanas buscando, comunicación difícil, y nunca sabes si el código sirve.
 							</p>
 						</div>
-						<div className="rounded-xl border border-red-100 bg-red-50/50 p-6">
-							<p className="font-medium text-gray-900">Aprender a programar</p>
-							<p className="mt-2 text-sm text-gray-600">
+						<div className="group rounded-2xl border border-amber-500/20 bg-amber-500/5 p-6 backdrop-blur-sm transition-all hover:border-amber-500/30 hover:bg-amber-500/10">
+							<div className="mb-4 flex size-10 items-center justify-center rounded-lg bg-amber-500/10">
+								<span className="text-lg">⏳</span>
+							</div>
+							<p className="font-medium text-white">Aprender a programar</p>
+							<p className="mt-2 text-sm text-gray-400">
 								6-12 meses solo para lo básico. Tu competencia ya estará vendiendo.
 							</p>
 						</div>
@@ -148,56 +165,66 @@ function Craftsmanship() {
 			title: 'Desarrolladores, no ensambladores',
 			description:
 				'Cada línea de código es escrita con intención. No copiamos y pegamos soluciones genéricas. Diseñamos arquitecturas pensadas para tu negocio específico.',
+			gradient: 'from-cyan-500 to-blue-500',
 		},
 		{
 			icon: Gem,
 			title: 'Calidad que se nota',
 			description:
 				'Código limpio, bien documentado y fácil de mantener. Tu futuro equipo técnico nos lo agradecerá. No dejamos deuda técnica escondida.',
+			gradient: 'from-purple-500 to-pink-500',
 		},
 		{
 			icon: Sparkles,
 			title: 'IA como herramienta, no como atajo',
 			description:
 				'Usamos inteligencia artificial para potenciar nuestro trabajo, no para reemplazarlo. La IA acelera, pero el criterio y la experiencia son nuestros.',
+			gradient: 'from-blue-500 to-purple-500',
 		},
 		{
 			icon: Wrench,
 			title: 'Ingeniería, no improvisación',
 			description:
 				'Nada de "vibe coding". Cada decisión técnica tiene fundamento. Tests, revisiones de código y estándares profesionales en cada proyecto.',
+			gradient: 'from-pink-500 to-cyan-500',
 		},
 	]
 
 	return (
-		<section className="border-t border-gray-200 bg-white py-16 sm:py-24">
+		<section className="relative bg-[#0a0a0f] py-16 sm:py-24">
+			<div className="absolute inset-0 grid-pattern opacity-30" />
+			<div className="absolute left-1/2 top-0 h-px w-1/2 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent" />
 			<Container>
-				<div className="mx-auto max-w-2xl text-center">
-					<p className="text-sm font-medium text-emerald-600">
-						Nuestra filosofía
-					</p>
-					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						Software hecho con atención al detalle
+				<div className="relative mx-auto max-w-2xl text-center">
+					<div className="inline-flex items-center gap-2 rounded-full border border-purple-500/20 bg-purple-500/10 px-4 py-1.5">
+						<span className="text-sm font-medium text-purple-300">
+							Nuestra filosofía
+						</span>
+					</div>
+					<h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+						Software hecho con{' '}
+						<span className="text-gradient-cyber">atención al detalle</span>
 					</h2>
-					<p className="mt-4 text-lg text-gray-600">
+					<p className="mt-4 text-lg text-gray-400">
 						En un mundo de soluciones rápidas y código desechable, nosotros construimos productos que duran. Combinamos experiencia humana con tecnología de punta.
 					</p>
 				</div>
-				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:grid-cols-2">
+				<div className="relative mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2">
 					{principles.map((principle) => (
 						<div
 							key={principle.title}
-							className="relative rounded-xl border border-gray-200 bg-gradient-to-br from-gray-50 to-white p-6"
+							className="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02] p-6 backdrop-blur-sm transition-all duration-300 hover:border-white/10 hover:bg-white/[0.04]"
 						>
-							<div className="flex items-start gap-4">
-								<div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-emerald-100">
-									<principle.icon className="size-6 text-emerald-600" />
+							<div className={`absolute -right-20 -top-20 h-40 w-40 rounded-full bg-gradient-to-br ${principle.gradient} opacity-5 blur-3xl transition-opacity duration-300 group-hover:opacity-10`} />
+							<div className="relative flex items-start gap-4">
+								<div className={`flex size-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br ${principle.gradient} shadow-lg`}>
+									<principle.icon className="size-6 text-white" />
 								</div>
 								<div>
-									<h3 className="text-lg font-semibold text-gray-900">
+									<h3 className="text-lg font-semibold text-white">
 										{principle.title}
 									</h3>
-									<p className="mt-2 text-base leading-relaxed text-gray-600">
+									<p className="mt-2 text-base leading-relaxed text-gray-400">
 										{principle.description}
 									</p>
 								</div>
@@ -236,33 +263,50 @@ function Process() {
 	]
 
 	return (
-		<section id="proceso" className="scroll-mt-16 border-t border-gray-200 bg-gray-50 py-16 sm:py-24">
+		<section id="proceso" className="relative scroll-mt-16 bg-[#0f0f18] py-16 sm:py-24">
+			<div className="absolute inset-0 grid-pattern opacity-30" />
+			<div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-purple-500/30 to-transparent" />
 			<Container>
-				<div className="mx-auto max-w-2xl text-center">
-					<p className="text-sm font-medium text-emerald-600">
-						Así de simple
-					</p>
-					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						De idea a producto en 3 pasos
+				<div className="relative mx-auto max-w-2xl text-center">
+					<div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-1.5">
+						<span className="text-sm font-medium text-cyan-300">
+							Así de simple
+						</span>
+					</div>
+					<h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+						De idea a producto en <span className="text-gradient-cyber">3 pasos</span>
 					</h2>
 				</div>
-				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-3">
-					{steps.map((step) => (
-						<div key={step.number} className="relative rounded-xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
-							<div className="flex items-center gap-4">
-								<div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-emerald-100">
-									<step.icon className="size-6 text-emerald-600" />
+				<div className="relative mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-8 sm:gap-6 lg:grid-cols-3">
+					{/* Connection line for desktop */}
+					<div className="absolute left-0 right-0 top-16 hidden h-px bg-gradient-to-r from-cyan-500/0 via-cyan-500/30 to-cyan-500/0 lg:block" />
+					{steps.map((step, index) => (
+						<div key={step.number} className="group relative">
+							<div className="relative rounded-2xl border border-white/5 bg-white/[0.02] p-6 backdrop-blur-sm transition-all duration-300 hover:border-cyan-500/20 hover:bg-white/[0.04]">
+								<div className="flex items-center gap-4">
+									<div className="relative flex size-14 shrink-0 items-center justify-center">
+										<div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-500 to-purple-500 opacity-20" />
+										<div className="relative flex size-12 items-center justify-center rounded-full border border-cyan-500/30 bg-[#0a0a0f]">
+											<step.icon className="size-5 text-cyan-400" />
+										</div>
+									</div>
+									<span className="font-mono text-2xl font-bold text-gradient-cyber">
+										{step.number}
+									</span>
 								</div>
-								<span className="text-sm font-semibold text-emerald-600">
-									Paso {step.number}
-								</span>
+								<h3 className="mt-5 text-lg font-semibold text-white">
+									{step.title}
+								</h3>
+								<p className="mt-2 text-base leading-relaxed text-gray-400">
+									{step.description}
+								</p>
 							</div>
-							<h3 className="mt-4 text-lg font-semibold text-gray-900">
-								{step.title}
-							</h3>
-							<p className="mt-2 text-base leading-relaxed text-gray-600">
-								{step.description}
-							</p>
+							{/* Arrow connector for mobile */}
+							{index < steps.length - 1 && (
+								<div className="flex justify-center py-4 lg:hidden">
+									<ArrowRight className="size-5 text-cyan-500/50" />
+								</div>
+							)}
 						</div>
 					))}
 				</div>
@@ -306,35 +350,39 @@ function Deliverables() {
 	]
 
 	return (
-		<section id="entregables" className="scroll-mt-16 py-16 sm:py-24">
+		<section id="entregables" className="relative scroll-mt-16 bg-[#0a0a0f] py-16 sm:py-24">
+			<div className="absolute inset-0 grid-pattern opacity-30" />
 			<Container>
-				<div className="mx-auto max-w-2xl text-center">
-					<p className="text-sm font-medium text-emerald-600">
-						Qué incluye cada MVP
-					</p>
-					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						Todo lo que necesitas para lanzar
+				<div className="relative mx-auto max-w-2xl text-center">
+					<div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-1.5">
+						<span className="text-sm font-medium text-cyan-300">
+							Qué incluye cada MVP
+						</span>
+					</div>
+					<h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+						Todo lo que necesitas para <span className="text-gradient-cyber">lanzar</span>
 					</h2>
-					<p className="mt-4 text-lg text-gray-600">
+					<p className="mt-4 text-lg text-gray-400">
 						No empezamos de cero. Nuestro kit incluye todo lo esencial, listo para personalizar.
 					</p>
 				</div>
-				<div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
+				<div className="relative mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
 					{items.map((item) => (
 						<div
 							key={item.title}
-							className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-50 to-white p-6 ring-1 ring-slate-200/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-emerald-200"
+							className="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.02] p-6 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/20 hover:bg-white/[0.04]"
 						>
-							<div className="flex size-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-teal-500 shadow-lg shadow-emerald-500/25">
-								<item.icon className="size-6 text-white" />
+							<div className="relative flex size-12 items-center justify-center">
+								<div className="absolute inset-0 rounded-xl bg-gradient-to-br from-cyan-500 to-purple-500 opacity-80" />
+								<item.icon className="relative size-6 text-white" />
 							</div>
-							<h3 className="mt-4 text-lg font-semibold text-gray-900">
+							<h3 className="mt-4 text-lg font-semibold text-white">
 								{item.title}
 							</h3>
-							<p className="mt-2 text-sm leading-relaxed text-gray-600">
+							<p className="mt-2 text-sm leading-relaxed text-gray-400">
 								{item.description}
 							</p>
-							<div className="absolute -bottom-2 -right-2 size-24 rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 opacity-10 blur-2xl transition-all duration-300 group-hover:opacity-20" />
+							<div className="absolute -bottom-10 -right-10 size-32 rounded-full bg-cyan-500 opacity-5 blur-3xl transition-all duration-300 group-hover:opacity-10" />
 						</div>
 					))}
 				</div>
@@ -417,40 +465,47 @@ function Pricing() {
 	]
 
 	return (
-		<section id="precio" className="scroll-mt-16 border-t border-gray-200 bg-gray-50 py-16 sm:py-24">
+		<section id="precio" className="relative scroll-mt-16 bg-[#0f0f18] py-16 sm:py-24">
+			<div className="absolute inset-0 grid-pattern opacity-30" />
+			<div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent" />
 			<Container>
-				<div className="mx-auto max-w-2xl text-center">
-					<p className="text-sm font-medium text-emerald-600">
-						Inversión clara
-					</p>
-					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						Elige el plan que se ajusta a tu idea
+				<div className="relative mx-auto max-w-2xl text-center">
+					<div className="inline-flex items-center gap-2 rounded-full border border-purple-500/20 bg-purple-500/10 px-4 py-1.5">
+						<span className="text-sm font-medium text-purple-300">
+							Inversión clara
+						</span>
+					</div>
+					<h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+						Elige el plan que se ajusta a <span className="text-gradient-cyber">tu idea</span>
 					</h2>
-					<p className="mt-4 text-lg text-gray-600">
+					<p className="mt-4 text-lg text-gray-400">
 						Precio fijo. Sin sorpresas. Pago en 2 partes.
 					</p>
 				</div>
-				<div className="mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 lg:grid-cols-3">
+				<div className="relative mx-auto mt-16 grid max-w-5xl grid-cols-1 gap-6 lg:grid-cols-3">
 					{plans.map((plan) => (
 						<div
 							key={plan.name}
-							className={`relative rounded-2xl p-8 ${plan.highlighted
-								? 'border-2 border-emerald-500 bg-white shadow-lg'
-								: 'border border-gray-200 bg-white shadow-sm'
+							className={`group relative overflow-hidden rounded-2xl p-8 transition-all duration-300 ${plan.highlighted
+								? 'border border-cyan-500/50 bg-gradient-to-b from-cyan-500/10 to-purple-500/10 shadow-[0_0_40px_rgba(0,245,255,0.1)]'
+								: 'border border-white/5 bg-white/[0.02] hover:border-white/10 hover:bg-white/[0.04]'
 								}`}
 						>
 							{plan.highlighted && (
+								<div className="absolute -top-px left-1/2 h-px w-1/2 -translate-x-1/2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent" />
+							)}
+							{plan.highlighted && (
 								<div className="absolute -top-4 left-1/2 -translate-x-1/2">
-									<span className="rounded-full bg-emerald-500 px-4 py-1 text-sm font-medium text-white">
+									<span className="rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 px-4 py-1.5 text-sm font-medium text-white shadow-lg shadow-cyan-500/25">
 										Recomendado
 									</span>
 								</div>
 							)}
 							<div className="text-center">
-								<p className="text-lg font-semibold text-gray-900">{plan.name}</p>
-								<p className="mt-1 text-sm text-gray-500">{plan.description}</p>
+								<p className="text-lg font-semibold text-white">{plan.name}</p>
+								<p className="mt-1 text-sm text-gray-400">{plan.description}</p>
 								<div className="mt-4 flex items-baseline justify-center gap-1">
-									<span className="text-4xl font-semibold tracking-tight text-gray-900">
+									<span className={`text-4xl font-semibold tracking-tight ${plan.highlighted ? 'text-gradient-cyber' : 'text-white'}`}>
 										{plan.price}
 									</span>
 									<span className="text-base text-gray-500">USD</span>
@@ -458,8 +513,8 @@ function Pricing() {
 							</div>
 							<div className="mt-8 space-y-3">
 								{plan.includesPrevious && plan.previousPlan && (
-									<div className="mb-4 rounded-lg bg-emerald-50 px-3 py-2 text-center">
-										<span className="text-sm font-medium text-emerald-700">
+									<div className="mb-4 rounded-lg border border-cyan-500/20 bg-cyan-500/5 px-3 py-2 text-center">
+										<span className="text-sm font-medium text-cyan-300">
 											✓ Todo lo del plan {plan.previousPlan}
 										</span>
 									</div>
@@ -467,10 +522,9 @@ function Pricing() {
 								<ul className="space-y-3">
 									{plan.features.map((feature) => (
 										<li key={feature.text} className="flex items-start gap-3">
-											<feature.icon className={`mt-0.5 size-4 shrink-0 ${feature.highlight ? 'text-emerald-600' : plan.highlighted ? 'text-emerald-600' : 'text-gray-400'}`} />
-											<span className={`text-sm ${feature.highlight ? 'font-medium text-emerald-700' : 'text-gray-600'}`}>
+											<feature.icon className={`mt-0.5 size-4 shrink-0 ${feature.highlight ? 'text-cyan-400' : plan.highlighted ? 'text-cyan-400' : 'text-gray-500'}`} />
+											<span className={`text-sm ${feature.highlight ? 'font-medium text-cyan-300' : 'text-gray-400'}`}>
 												{feature.text}
-												{feature.highlight && <span className="ml-1 text-xs text-emerald-500">✨</span>}
 											</span>
 										</li>
 									))}
@@ -479,9 +533,9 @@ function Pricing() {
 							<div className="mt-8">
 								<Link
 									href="#contacto"
-									className={`flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-medium transition-colors ${plan.highlighted
-										? 'bg-emerald-500 text-white hover:bg-emerald-600'
-										: 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+									className={`flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-medium transition-all ${plan.highlighted
+										? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40'
+										: 'border border-white/10 bg-white/5 text-white hover:border-cyan-500/30 hover:bg-white/10'
 										}`}
 								>
 									{plan.cta}
@@ -491,17 +545,17 @@ function Pricing() {
 						</div>
 					))}
 				</div>
-				<div className="mx-auto mt-12 max-w-2xl">
-					<div className="rounded-xl border border-gray-200 bg-white p-6">
+				<div className="relative mx-auto mt-12 max-w-2xl">
+					<div className="rounded-2xl border border-white/5 bg-white/[0.02] p-6 backdrop-blur-sm">
 						<div className="flex items-start gap-4">
-							<div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-gray-100">
-								<Shield className="size-5 text-gray-600" />
+							<div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-purple-500/10">
+								<Shield className="size-5 text-purple-400" />
 							</div>
 							<div>
-								<p className="text-sm font-medium text-gray-900">
+								<p className="text-sm font-medium text-white">
 									Soporte continuo (opcional)
 								</p>
-								<p className="mt-1 text-sm text-gray-600">
+								<p className="mt-1 text-sm text-gray-400">
 									$200-300 USD/mes. Nos encargamos del hosting, monitoreo y pequeños ajustes. Tú solo vendes.
 								</p>
 							</div>
@@ -553,17 +607,20 @@ function FAQ() {
 	]
 
 	return (
-		<section id="faq" className="scroll-mt-16 py-16 sm:py-24">
+		<section id="faq" className="relative scroll-mt-16 bg-[#0a0a0f] py-16 sm:py-24">
+			<div className="absolute inset-0 grid-pattern opacity-30" />
 			<Container>
-				<div className="mx-auto max-w-2xl text-center">
-					<p className="text-sm font-medium text-emerald-600">
-						Preguntas comunes
-					</p>
-					<h2 className="mt-2 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
-						Lo que otros fundadores preguntan
+				<div className="relative mx-auto max-w-2xl text-center">
+					<div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-1.5">
+						<span className="text-sm font-medium text-cyan-300">
+							Preguntas comunes
+						</span>
+					</div>
+					<h2 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+						Lo que otros fundadores <span className="text-gradient-cyber">preguntan</span>
 					</h2>
 				</div>
-				<div className="mx-auto mt-16 max-w-3xl">
+				<div className="relative mx-auto mt-16 max-w-3xl">
 					<FAQAccordion items={faqs} />
 				</div>
 			</Container>
@@ -573,13 +630,17 @@ function FAQ() {
 
 function Contact() {
 	return (
-		<section id="contacto" className="scroll-mt-16 border-t border-gray-200 bg-gray-900 py-16 sm:py-24">
+		<section id="contacto" className="relative scroll-mt-16 overflow-hidden bg-[#0f0f18] py-16 sm:py-24">
+			<div className="absolute inset-0 grid-pattern opacity-30" />
+			<div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-purple-500/30 to-transparent" />
+			<div className="absolute -left-40 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-cyan-500/10 blur-[100px]" />
+			<div className="absolute -right-40 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-purple-500/10 blur-[100px]" />
 			<Container>
-				<div className="mx-auto max-w-2xl text-center">
+				<div className="relative mx-auto max-w-2xl text-center">
 					<h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-						¿Listo para lanzar tu idea?
+						¿Listo para <span className="text-gradient-cyber">lanzar tu idea</span>?
 					</h2>
-					<p className="mt-4 text-lg text-gray-300">
+					<p className="mt-4 text-lg text-gray-400">
 						Escríbenos directo. Sin formularios eternos.
 					</p>
 					<div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -587,17 +648,18 @@ function Contact() {
 							href="https://wa.me/56993289547?text=Hola%20👋%20Quiero%20saber%20más%20sobre%20cómo%20lanzar%20mi%20producto"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="inline-flex items-center gap-2 rounded-full bg-emerald-500 px-8 py-4 text-lg font-medium text-white transition-colors hover:bg-emerald-600"
+							className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 px-8 py-4 text-lg font-medium text-white shadow-lg shadow-cyan-500/25 transition-all hover:shadow-cyan-500/40"
 						>
 							<MessageCircle className="size-5" />
 							Escríbenos por WhatsApp
+							<ArrowRight className="size-4 transition-transform group-hover:translate-x-1" />
 						</Link>
 						<span className="text-gray-500">o</span>
 						<Link
 							href="https://calendly.com"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="inline-flex items-center gap-2 rounded-full border border-gray-600 bg-transparent px-8 py-4 text-lg font-medium text-white transition-colors hover:border-gray-500 hover:bg-gray-800"
+							className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-8 py-4 text-lg font-medium text-white backdrop-blur-sm transition-all hover:border-purple-500/30 hover:bg-white/10"
 						>
 							<Calendar className="size-5" />
 							Agenda una reunión
@@ -607,7 +669,7 @@ function Contact() {
 						¿Prefieres email?{' '}
 						<a
 							href="mailto:seba@modoautomatico.app"
-							className="font-medium text-white underline underline-offset-4"
+							className="font-medium text-cyan-400 underline underline-offset-4 transition-colors hover:text-cyan-300"
 						>
 							seba@modoautomatico.app
 						</a>
@@ -620,14 +682,14 @@ function Contact() {
 
 export default function Home() {
 	return (
-		<div>
+		<div className="bg-[#0a0a0f]">
 			<div className="relative">
 				<Container>
 					<LanzatuNavbar />
 				</Container>
 				<Hero />
 			</div>
-			<main className="bg-white">
+			<main>
 				<TrustBadges />
 				<Problem />
 				<Process />

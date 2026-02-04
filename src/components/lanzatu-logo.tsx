@@ -3,16 +3,19 @@ import { clsx } from 'clsx'
 export function LanzatuLogo({ className }: { className?: string }) {
   return (
     <div className={clsx('flex items-center gap-2', className)}>
-      <RocketIcon className="h-8 w-8 text-gray-900" />
-      <span className="text-xl font-semibold tracking-tight text-gray-900">
-        lanzatu<span className="text-emerald-600">.app</span>
+      <div className="relative">
+        <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500 to-purple-500 opacity-20 blur-md" />
+        <RocketIcon className="relative h-8 w-8 text-cyan-400" />
+      </div>
+      <span className="text-xl font-semibold tracking-tight text-white">
+        lanzatu<span className="text-gradient-cyber">.app</span>
       </span>
     </div>
   )
 }
 
 export function LanzatuMark({ className }: { className?: string }) {
-  return <RocketIcon className={clsx('text-gray-900', className)} />
+  return <RocketIcon className={clsx('text-cyan-400', className)} />
 }
 
 function RocketIcon({ className }: { className?: string }) {
