@@ -18,43 +18,91 @@ function SocialIconX(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
+function DiamondIcon() {
+  return (
+    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="text-[#C9A962]">
+      <path d="M6 0L12 6L6 12L0 6L6 0Z" fill="currentColor" fillOpacity="0.3" />
+      <path d="M6 2L10 6L6 10L2 6L6 2Z" fill="currentColor" />
+    </svg>
+  )
+}
+
 export function LanzatuFooter() {
   return (
-    <footer className="relative border-t border-white/5 bg-[#0a0a0f]">
-      <div className="absolute left-0 top-0 h-px w-full bg-gradient-to-r from-transparent via-cyan-500/20 to-transparent" />
+    <footer className="relative border-t border-[#1A1714]/10 bg-[#1A1714]">
+      {/* Decorative top line */}
+      <div className="absolute left-1/2 top-0 h-px w-32 -translate-x-1/2 -translate-y-px bg-gradient-to-r from-transparent via-[#C9A962] to-transparent" />
+
       <Container>
-        <div className="py-12">
-          <div className="flex flex-col items-center gap-8 sm:flex-row sm:justify-between">
-            <LanzatuLogo />
+        <div className="py-16">
+          {/* Main footer content */}
+          <div className="flex flex-col items-center gap-10">
+            {/* Logo */}
+            <LanzatuLogo variant="dark" />
+
+            {/* Navigation */}
+            <nav className="flex flex-wrap items-center justify-center gap-8">
+              <Link
+                href="#proceso"
+                className="text-sm text-[#A69E93] transition-colors hover:text-[#FBF8F1]"
+              >
+                Proceso
+              </Link>
+              <DiamondIcon />
+              <Link
+                href="#entregables"
+                className="text-sm text-[#A69E93] transition-colors hover:text-[#FBF8F1]"
+              >
+                Entregables
+              </Link>
+              <DiamondIcon />
+              <Link
+                href="#precio"
+                className="text-sm text-[#A69E93] transition-colors hover:text-[#FBF8F1]"
+              >
+                Precio
+              </Link>
+              <DiamondIcon />
+              <Link
+                href="#faq"
+                className="text-sm text-[#A69E93] transition-colors hover:text-[#FBF8F1]"
+              >
+                Preguntas
+              </Link>
+            </nav>
+
+            {/* Social links */}
             <div className="flex items-center gap-6">
               <Link
                 href="https://linkedin.com"
                 target="_blank"
                 aria-label="LinkedIn"
-                className="text-gray-500 transition-colors hover:text-cyan-400"
+                className="flex size-10 items-center justify-center rounded-full border border-[#3D372F] text-[#A69E93] transition-all hover:border-[#C9A962] hover:text-[#C9A962]"
               >
-                <SocialIconLinkedIn className="size-5" />
+                <SocialIconLinkedIn className="size-4" />
               </Link>
               <Link
                 href="https://x.com"
                 target="_blank"
                 aria-label="X (Twitter)"
-                className="text-gray-500 transition-colors hover:text-cyan-400"
+                className="flex size-10 items-center justify-center rounded-full border border-[#3D372F] text-[#A69E93] transition-all hover:border-[#C9A962] hover:text-[#C9A962]"
               >
-                <SocialIconX className="size-5" />
+                <SocialIconX className="size-4" />
               </Link>
             </div>
           </div>
-          <div className="mt-8 flex flex-col items-center gap-4 border-t border-white/5 pt-8 sm:flex-row sm:justify-between">
-            <p className="text-sm text-gray-500">
-              &copy; {new Date().getFullYear()} lanzatu.app. Todos los derechos reservados. By ModoAutomatico.
+
+          {/* Bottom section */}
+          <div className="mt-12 flex flex-col items-center gap-4 border-t border-[#3D372F] pt-8 sm:flex-row sm:justify-between">
+            <p className="text-sm text-[#857C71]">
+              &copy; {new Date().getFullYear()} lanzatu.app — By ModoAutomatico
             </p>
-            <div className="flex gap-6 text-sm text-gray-500">
-              <Link href="#" className="hover:text-white">
+            <div className="flex gap-6 text-sm text-[#857C71]">
+              <Link href="#" className="transition-colors hover:text-[#C9A962]">
                 Privacidad
               </Link>
-              <Link href="#" className="hover:text-white">
-                Terminos
+              <Link href="#" className="transition-colors hover:text-[#C9A962]">
+                Términos
               </Link>
             </div>
           </div>
